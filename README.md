@@ -1,5 +1,7 @@
 # Data Structure and Algorithm
 
+<hr>
+
 [파이썬 알고리즘 인터뷰] 
 
 ### Github : https://github.com/onlybooks/algorithm-interview
@@ -11,7 +13,7 @@
 | 1 | [유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/) | ★ | 6장. 문자열 조작 | [palindrome.py](com/huni/algorithm_interview/chap06/palindrome.py)|
 | 2 | [문자열 뒤집기](https://leetcode.com/problems/reverse-string/) | ★ | 6장. 문자열 조작 | [reverse_string.py](com/huni/algorithm_interview/chap06/palindrome.py/reverse_string.py)|
 
-
+<hr>
 
 [이것이 취업을 위한 코딩 테스트다 with 파이썬]
 
