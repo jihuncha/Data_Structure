@@ -49,16 +49,18 @@ def solution(n, lost, reserve):
                 answer += 1
                 continue
             if i + 1 in reserve:
-                reserve.remove(i+1)
-                answer +=1
-                continue
+                if i + 1 not in lost:
+                    reserve.remove(i+1)
+                    answer +=1
+                    continue
             if i -1 in reserve:
-                reserve.remove(i-1)
-                answer +=1
-                continue
+                if i - 1 not in lost:
+                    reserve.remove(i-1)
+                    answer +=1
+                    continue
         else:
             answer += 1
 
     return answer
 
-print(solution(5, [2,4], [1,2,3]))
+print(solution(7, [1,2,3,6,7], [2,6]))
