@@ -9,4 +9,10 @@ test = [1,2,3,4,5]
 #     print(i)
 
 
-print(test[-1:0:-1])
+print(test[-5])
+
+temp = [(1,2,3),(2,3,4)]
+
+print(temp[0])
+
+print(''.join((str(temp[0][:]))))
