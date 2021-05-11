@@ -26,6 +26,7 @@ import itertools
 # combination 으로는 timeout이 떨어진다.
 def solution(number, k):
     # 1. combination 답 - timeout
+
     # temp_list = sorted([int(''.join(x)) for x in itertools.combinations(list(number), len(number) - k)], reverse=True)
     #
     # return str(max(temp_list))
@@ -33,31 +34,48 @@ def solution(number, k):
     # return str(temp_list[0])
 
     # 2. 다른 풀이
+    # while 이용한 전체 순회인데...아마 너무 긴 숫자가 안되는 모양
     # 8,10 (타임아웃 2개)
-    not_end = False
-    count = 0
-    temp_list = list(number)
+    # not_end = False
+    # count = 0
+    # temp_list = list(number)
+    #
+    # idx = 0
+    # while count != k:
+    #     # 모든 순환을 한 경우
+    #     if idx + 1 > len(temp_list) - 1:
+    #         not_end = True
+    #         break
+    #
+    #     if int(temp_list[idx]) < int(temp_list[idx + 1]):
+    #         temp_list.pop(idx)
+    #         count +=1
+    #         idx = 0
+    #     else:
+    #         idx += 1
+    #
+    # if not_end:
+    #     for i in range(k - count):
+    #         temp_list.pop()
+    #
+    # return ''.join(temp_list)
 
-    idx = 0
-    while count != k:
-        # 모든 순환을 한 경우
-        if idx + 1 > len(temp_list) - 1:
-            not_end = True
-            break
+    # 3. 다른 풀이 3 - 하여간 천재들 많네..
+    stack = []
+    my_num = list(number)
+    stack.append(my_num[0])
 
-        if int(temp_list[idx]) < int(temp_list[idx + 1]):
-            temp_list.pop(idx)
-            count +=1
-            idx = 0
-        else:
-            idx += 1
+    for idx,num in enumerate(number[1:]):
+        while len(stack) > 0 and stack[-1] < num and k > 0:
+            k -= 1
+            stack.pop()
+        stack.append(num)
 
-    if not_end:
-        for i in range(k - count):
-            temp_list.pop()
+    if k != 0:
+        stack = stack[:-k]
+    return ''.join(stack)
 
-    return ''.join(temp_list)
 
-print(solution("4321",3))
+print(solution("44444421",5))
 
 # "4177252841" 4	"775841"
