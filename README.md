@@ -52,3 +52,4 @@
       - 문자 이동 count는 어렵지 않으나, 위치 조작이 어려움.
     * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy_3.py))
       - 8,10번 타임아웃ㅠㅠ
+    * 구명보트 : ([해결/greedy_4](com/huni/sample/programmers/greedy_4.py))

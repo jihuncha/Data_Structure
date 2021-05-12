@@ -22,7 +22,6 @@
 # "2134" 3     "4"
 import itertools
 
-
 # combination 으로는 timeout이 떨어진다.
 def solution(number, k):
     # 1. combination 답 - timeout

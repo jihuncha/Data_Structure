@@ -23,8 +23,39 @@
 # [70, 50, 80, 50]	100	3
 # [70, 80, 50]	100	3
 
+# 구명보트는 작아서 한 번에 최대 2명
+# 최대한 작은 것과 최대한 큰것을 넣어서 limit에 가까운숫자대로 집어넣어야할듯??
+
+import collections
 def solution(people, limit):
     answer = 0
+
+    sort_list = collections.deque(sorted(people))
+
+    while len(sort_list) > 0:
+        temp = sort_list.pop()
+        answer += 1
+
+        if len(sort_list) >= 1 and temp + sort_list[0] <= limit:
+            sort_list.popleft()
+
     return answer
 
+
+
 print(solution([70, 50, 80, 50], 100))
+
+# 다른 사람 풀이
+
+# def solution(people, limit) :
+#     answer = 0
+#     people.sort()
+#
+#     a = 0
+#     b = len(people) - 1
+#     while a < b :
+#         if people[b] + people[a] <= limit :
+#             a += 1
+#             answer += 1
+#         b -= 1
+#     return len(people) - answer
