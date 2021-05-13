@@ -15,14 +15,10 @@ class Solution:
         letter, digits = [], []
 
         for i in logs:
-            # print(i.split()[1].isdigit())
-            # if i.split(1)
             if i.split()[1].isdigit():
                 digits.append(i)
             else:
                 letter.append(i)
-        print(letter)
-        print(digits)
 
         letter.sort(key=lambda x:[x.split()[1:], x.split()[0]])
 
