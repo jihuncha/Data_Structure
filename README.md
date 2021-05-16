@@ -56,3 +56,7 @@
     * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy_3.py))
       - 8,10번 타임아웃ㅠㅠ
     * 구명보트 : ([해결/greedy_4](com/huni/sample/programmers/greedy_4.py))
+
+* 백준
+  1. Greedy
+    * 로프 : ([해결 완료/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py))
