@@ -73,16 +73,20 @@ def solution(number, k):
     stack.append(my_num[0])
 
     for idx,num in enumerate(number[1:]):
+        # 맨앞에 수보다 작은 경우 ? 제거해준다
+        # 전체 순회하면서
         while len(stack) > 0 and stack[-1] < num and k > 0:
             k -= 1
             stack.pop()
         stack.append(num)
+        print(stack, k)
 
+    # 전체 순회했는데 뒤에 숫자가 더 큰 경우는 앞에서 부터 제거
     if k != 0:
         stack = stack[:-k]
     return ''.join(stack)
 
 
-print(solution("44444421",5))
+print(solution("233333334",5))
 
 # "4177252841" 4	"775841"
