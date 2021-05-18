@@ -60,3 +60,6 @@
 * 백준
   1. Greedy
     * 로프 : ([해결 완료/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py))
+  
+  2. Implement
+    * 럭키 스트레이트 : ([해결 완료/implement_1](com/huni/sample/backjoon/implement/implement_1.py))
