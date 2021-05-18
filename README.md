@@ -50,12 +50,12 @@
   * 참고 사이트 - https://eda-ai-lab.tistory.com/465?category=766271
   
   1. Greedy
-    * 체육복 : ([해결 완료/greedy_1](com/huni/sample/programmers/greedy_1.py))
-    * 조이스틱 : ([미해결/greedy_2](com/huni/sample/programmers/greedy_2.py))
+    * 체육복 : ([해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py))
+    * 조이스틱 : ([미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py))
       - 문자 이동 count는 어렵지 않으나, 위치 조작이 어려움.
-    * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy_3.py))
+    * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py))
       - 8,10번 타임아웃ㅠㅠ
-    * 구명보트 : ([해결/greedy_4](com/huni/sample/programmers/greedy_4.py))
+    * 구명보트 : ([해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py))
 
 * 백준
   1. Greedy
