@@ -120,7 +120,8 @@ def solution(key, lock):
             check_and_move(temp_key_list)
 
     check_and_move(key_list)
-    # print("================")
+
+    # 회전하면서 반복
     for i in range(3):
         # 이미 결과가 true인 경우 할 필요없지
         if answer:

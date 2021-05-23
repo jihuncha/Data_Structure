@@ -50,7 +50,10 @@
   * 참고 사이트 - https://eda-ai-lab.tistory.com/465?category=766271
   
   1. Greedy
-    * 체육복 : ([해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py))
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [체육복](https://leetcode.com/problems/valid-palindrome/) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
+     | 2 | [조이스틱](https://leetcode.com/problems/valid-palindrome/) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py)| |
     * 조이스틱 : ([미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py))
       - 문자 이동 count는 어렵지 않으나, 위치 조작이 어려움.
     * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py))
