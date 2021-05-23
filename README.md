@@ -61,6 +61,7 @@
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
+     | 1 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | 해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
      | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | | 
      
 <hr>
