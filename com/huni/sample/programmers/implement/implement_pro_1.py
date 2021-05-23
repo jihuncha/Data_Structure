@@ -65,14 +65,38 @@
 # 이 경우 어떻게 문자열을 잘라도 압축되지 않으므로 가장 짧은 길이는 17이 됩니다.
 
 def solution(s):
-    answer = 0
+    answer = len(s)
 
-    print(len(s))
-    temp = s
+    def make_str(index_size):
+        before_str = s[0:index_size]
+        count = 1
+        result_str = ""
 
-    for i in range(len(s)):
-        print(i)
-        print(temp[:i])
-    return answer
+        # print(before_str)
+        for i in range(index_size, len(s) + 1, index_size):
+            # print(i)
+            temp_str = s[i:i + index_size]
+            # print(temp_str)
+            if before_str[:] == temp_str[:]:
+                # print("sd")
+                count += 1
+            else:
+                result_str += str(count) + before_str if count >= 2 else before_str
+                before_str = temp_str[:]
+                count = 1
+        # 잔여 문자열 처리 (8자리이면서 3으로 짜른 경우...)
+        result_str += str(count) + before_str if count >= 2 else before_str
 
-print(solution("aabbaccc"))
+        return result_str
+
+    # print(make_str(3))
+
+    all_result_list = []
+    for i in range(1, len(s) // 2 + 1):
+        all_result_list.append(len(make_str(i)))
+
+    # print(all_result_list)
+
+    return min(all_result_list) if all_result_list else answer
+
+print(solution("a"))

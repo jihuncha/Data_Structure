@@ -28,3 +28,7 @@ for i in range(4):
 #             my_list[]
 
 
+a_list = [[1,2], [2,3]]
+b_list = [[2,3], [1,2]]
+
+print(sorted(a_list)[:] == sorted(b_list)[:])
