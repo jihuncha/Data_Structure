@@ -47,22 +47,31 @@
 [각종 사이트 문제 연습]
 
 * 프로그래머스
+  
   * 참고 사이트 - https://eda-ai-lab.tistory.com/465?category=766271
   
   1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [체육복](https://leetcode.com/problems/valid-palindrome/) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
-     | 2 | [조이스틱](https://leetcode.com/problems/valid-palindrome/) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py)| |
-    * 조이스틱 : ([미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py))
-      - 문자 이동 count는 어렵지 않으나, 위치 조작이 어려움.
-    * 큰 수 만들기 : ([미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py))
-      - 8,10번 타임아웃ㅠㅠ
-    * 구명보트 : ([해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py))
+     | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
+     | 2 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py) | |
+     | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py) | |
+     | 4 | [구멸보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py) | |
 
+  2. Implement
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | | 
+     
+<hr>
 * 백준
+
   1. Greedy
-    * 로프 : ([해결 완료/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py))
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결 완료/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py) | |
   
   2. Implement
-    * 럭키 스트레이트 : ([해결 완료/implement_1](com/huni/sample/backjoon/implement/implement_1.py))
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결 완료/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
