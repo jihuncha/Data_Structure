@@ -70,7 +70,7 @@ def solution(s):
     print(len(s))
     temp = s
 
-    for i in range(len(s) // 2):
+    for i in range(len(s)):
         print(i)
         print(temp[:i])
     return answer
