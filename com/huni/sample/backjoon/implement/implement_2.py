@@ -23,7 +23,9 @@
 #
 # 다음 줄에는 뱀의 방향 변환 횟수 L 이 주어진다. (1 ≤ L ≤ 100)
 #
-# 다음 L개의 줄에는 뱀의 방향 변환 정보가 주어지는데,  정수 X와 문자 C로 이루어져 있으며. 게임 시작 시간으로부터 X초가 끝난 뒤에 왼쪽(C가 'L') 또는 오른쪽(C가 'D')로 90도 방향을 회전시킨다는 뜻이다. X는 10,000 이하의 양의 정수이며, 방향 전환 정보는 X가 증가하는 순으로 주어진다.
+# 다음 L개의 줄에는 뱀의 방향 변환 정보가 주어지는데,  정수 X와 문자 C로 이루어져 있으며.
+# 게임 시작 시간으로부터 X초가 끝난 뒤에 왼쪽(C가 'L') 또는 오른쪽(C가 'D')로 90도 방향을 회전시킨다는 뜻이다.
+# X는 10,000 이하의 양의 정수이며, 방향 전환 정보는 X가 증가하는 순으로 주어진다.
 #
 # 출력
 # 첫째 줄에 게임이 몇 초에 끝나는지 출력한다.
@@ -74,3 +76,110 @@
 #
 # 예제 출력 3
 # 13
+import collections
+import sys
+
+n = int(sys.stdin.readline())
+
+# 보드 생성
+my_board = [[0] * n for _ in range(n)]
+
+# 사과 맵핑
+apple_count = int(sys.stdin.readline())
+for i in range(apple_count):
+    a,b = list(map(int, sys.stdin.readline().split()))
+    my_board[a-1][b-1] = 2
+
+# apple은 2로 설정하여 위치 체크
+print(my_board)
+
+# 좌표 변동 시간
+change_count = int(sys.stdin.readline())
+change_data = {}
+for i in range(change_count):
+    a,b = list(map(str, sys.stdin.readline().split()))
+    change_data[int(a)] = b
+
+# 체크
+print(change_data)
+
+# 상하좌우 이동
+dx = [0,1,0,-1]
+dy = [1,0,-1,0]
+
+# 뱀의 길이
+snake_len = 1
+
+second = 0
+my_board[0][0] = 1
+
+def move_index(x,y,index):
+    return [x + dx[index], y + dy[index]]
+
+deque_list = collections.deque()
+
+first_index = 0
+
+current_a, current_b = 0,0
+
+while True:
+    next_a, next_b = move_index(current_a, current_b, first_index)
+    print(next_a, next_b)
+    print("second - ", second)
+    # 머리가 좌표값을 벗어난 경우 / 몸통 만난 경우는 그대로 break
+    if next_a > n - 1 or next_b > n - 1 or next_a < 0 or next_b < 0 or my_board[next_a][next_b] == 1:
+        break
+
+    #사과가 있는 경우는 길이를 증가
+    if my_board[next_a][next_b] == 2:
+        snake_len += 1
+        # 꼬리 부분 append
+        deque_list.append((current_a,current_b))
+        print(deque_list)
+        # 현재 좌표값 갱신
+        current_a, current_b = next_a, next_b
+        my_board[current_a][current_b] = 1
+
+        # 사과를 먹어도 초는 더해줘야되지?
+        second += 1
+
+        # 다음 좌표 변경
+        if second in change_data:
+            if change_data[second] == 'D':
+                first_index += 1
+                if first_index > 3:
+                    first_index = 0
+            if change_data[second] == 'L':
+                first_index -= 1
+                if first_index < 0:
+                    first_index = 3
+        continue
+
+    # 사과가 없는 경우는 뒷부분을 땅긴다.
+    if deque_list:
+        temp_a, temp_b = deque_list.popleft()
+        my_board[temp_a][temp_a] = 0
+    else:
+        my_board[current_a][current_b] = 0
+
+    print(my_board)
+    current_a, current_b = next_a, next_b
+    # 증가 시킨다.
+    second += 1
+
+    if second in change_data:
+        if change_data[second] == 'D':
+            first_index += 1
+            if first_index > 3:
+                first_index = 0
+        if change_data[second] == 'L':
+            first_index -= 1
+            if first_index < 0:
+                first_index = 3
+
+print(second + 1)
+
+
+
+
+
