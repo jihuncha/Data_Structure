@@ -1,5 +1,7 @@
 # 뱀
 
+#
+
 # 문제
 #  'Dummy' 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데,
 #
@@ -91,7 +93,7 @@ for i in range(apple_count):
     my_board[a-1][b-1] = 2
 
 # apple은 2로 설정하여 위치 체크
-print(my_board)
+# print(my_board)
 
 # 좌표 변동 시간
 change_count = int(sys.stdin.readline())
@@ -101,14 +103,14 @@ for i in range(change_count):
     change_data[int(a)] = b
 
 # 체크
-print(change_data)
+# print(change_data)
 
 # 상하좌우 이동
 dx = [0,1,0,-1]
 dy = [1,0,-1,0]
 
 # 뱀의 길이
-snake_len = 1
+# snake_len = 1
 
 second = 0
 my_board[0][0] = 1
@@ -124,18 +126,18 @@ current_a, current_b = 0,0
 
 while True:
     next_a, next_b = move_index(current_a, current_b, first_index)
-    print(next_a, next_b)
-    print("second - ", second)
+    # print(next_a, next_b)
+    # print("second - ", second)
     # 머리가 좌표값을 벗어난 경우 / 몸통 만난 경우는 그대로 break
     if next_a > n - 1 or next_b > n - 1 or next_a < 0 or next_b < 0 or my_board[next_a][next_b] == 1:
         break
 
     #사과가 있는 경우는 길이를 증가
     if my_board[next_a][next_b] == 2:
-        snake_len += 1
+        # snake_len += 1
         # 꼬리 부분 append
         deque_list.append((current_a,current_b))
-        print(deque_list)
+        # print(deque_list)
         # 현재 좌표값 갱신
         current_a, current_b = next_a, next_b
         my_board[current_a][current_b] = 1
@@ -143,6 +145,7 @@ while True:
         # 사과를 먹어도 초는 더해줘야되지?
         second += 1
 
+        # print(my_board)
         # 다음 좌표 변경
         if second in change_data:
             if change_data[second] == 'D':
@@ -156,15 +159,19 @@ while True:
         continue
 
     # 사과가 없는 경우는 뒷부분을 땅긴다.
+    # print("no apple")
     if deque_list:
         temp_a, temp_b = deque_list.popleft()
-        my_board[temp_a][temp_a] = 0
+        # print("222", my_board[temp_a][temp_b])
+        my_board[temp_a][temp_b] = 0
+        deque_list.append((current_a, current_b))
     else:
         my_board[current_a][current_b] = 0
 
-    print(my_board)
-    current_a, current_b = next_a, next_b
+    my_board[next_a][next_b] = 1
+    # print(my_board)
     # 증가 시킨다.
+    current_a, current_b = next_a, next_b
     second += 1
 
     if second in change_data:
