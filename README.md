@@ -62,7 +62,7 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | 해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
-     | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | | 
+     | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | [풀이](com/huni/sample/programmers/implement/implement_pro_2_example.py) | 
      
 <hr>
 
@@ -77,3 +77,4 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결 완료/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
+     | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결 완료/implement_2](com/huni/sample/backjoon/implement/implement_2.py)| |
