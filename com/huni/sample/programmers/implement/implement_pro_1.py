@@ -82,35 +82,39 @@ def solution(s):
     answer = len(s)
 
     def make_str(index_size):
+        # 초기 문자열
         before_str = s[0:index_size]
+        # 초기 count
         count = 1
+        # 결과 문자열
         result_str = ""
 
-        # print('dd',before_str)
+        # 다음 문자열 부터 index_size 만큼 짜르면서 체크를 한다.
         for i in range(index_size, len(s) + 1, index_size):
-            # print(i)
+            # 다음 문자열
             temp_str = s[i:i + index_size]
-            # print(temp_str)
+            # 다음 문자열이 이전 문자열과 같은 경우 count 증가 시킨다.
             if before_str[:] == temp_str[:]:
                 count += 1
+            # 이전 문자열이 다른 경우는 count와 함께 결과 str에 더해준다.
             else:
                 result_str += str(count) + before_str if count >= 2 else before_str
                 before_str = temp_str[:]
                 # print('aa',before_str)
                 count = 1
-        # 잔여 문자열 처리 (8자리이면서 3으로 짜른 경우...)
+        # 잔여 문자열 처리 (8자리이면서 3으로 짜른 경우...) -> else에 안탄경우
         result_str += str(count) + before_str if count >= 2 else before_str
 
         return result_str
 
-    # print(make_str(3))
-
+    # 결과에 다 더해준다.
     all_result_list = []
     for i in range(1, len(s) // 2 + 1):
         all_result_list.append(len(make_str(i)))
 
     # print(all_result_list)
 
+    # 'a'인 경우
     return min(all_result_list) if all_result_list else answer
 
 print(solution("abcabc"))

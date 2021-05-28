@@ -1,9 +1,9 @@
 # 뱀
 
-#
+# https://www.acmicpc.net/problem/3190
 
 # 문제
-#  'Dummy' 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데,
+# 'Dummy' 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데,
 #
 # 사과를 먹으면 뱀 길이가 늘어난다. 뱀이 이리저리 기어다니다가 벽 또는 자기자신의 몸과 부딪히면 게임이 끝난다.
 #
@@ -78,6 +78,15 @@
 #
 # 예제 출력 3
 # 13
+
+
+####################################################################################################
+# 내 풀이
+# 문제 따라서 구현
+# 사과를 먹은 경우 deque에 이전 위치 저장하면서 사과가 없는 경우 popleft로 하나씩 뺴내서 처리
+####################################################################################################
+
+
 import collections
 import sys
 
@@ -105,23 +114,27 @@ for i in range(change_count):
 # 체크
 # print(change_data)
 
-# 상하좌우 이동
+# 상하좌우 이동 - 오른쪽부터
 dx = [0,1,0,-1]
 dy = [1,0,-1,0]
 
-# 뱀의 길이
-# snake_len = 1
-
+# 결과값
 second = 0
+
+#초기화
 my_board[0][0] = 1
 
+#다음 좌표 move 함수
 def move_index(x,y,index):
     return [x + dx[index], y + dy[index]]
 
+# 사과를 먹은 경우 처리하기위한 deque
 deque_list = collections.deque()
 
+# 초기 방향 (오른쪽)
 first_index = 0
 
+# 초기 좌표
 current_a, current_b = 0,0
 
 while True:
@@ -134,7 +147,6 @@ while True:
 
     #사과가 있는 경우는 길이를 증가
     if my_board[next_a][next_b] == 2:
-        # snake_len += 1
         # 꼬리 부분 append
         deque_list.append((current_a,current_b))
         # print(deque_list)
@@ -159,10 +171,8 @@ while True:
         continue
 
     # 사과가 없는 경우는 뒷부분을 땅긴다.
-    # print("no apple")
     if deque_list:
         temp_a, temp_b = deque_list.popleft()
-        # print("222", my_board[temp_a][temp_b])
         my_board[temp_a][temp_b] = 0
         deque_list.append((current_a, current_b))
     else:
