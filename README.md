@@ -2,6 +2,12 @@
 
 <hr>
 
+[개념 정리]
+
+* [DFS_BFS](com/huni/my_note/dfs_bfs/dfs_bfs_graph.md)
+
+<hr>
+
 [파이썬 알고리즘 인터뷰] 
 
 ### Github : https://github.com/onlybooks/algorithm-interview
@@ -13,7 +19,7 @@
 | 1 | [유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/) | ★ | 6장. 문자열 조작 | [palindrome.py](com/huni/algorithm_interview/chap06/palindrome.py)|
 | 2 | [문자열 뒤집기](https://leetcode.com/problems/reverse-string/) | ★ | 6장. 문자열 조작 | [reverse_string.py](com/huni/algorithm_interview/chap06/reverse_string.py)|
 | 3 | [로그파일 재정렬](https://leetcode.com/problems/reorder-data-in-log-files/) | ★ | 6장. 문자열 조작 | [reorder_log_files.py](com/huni/algorithm_interview/chap06/reorder_log_files.py)|
-
+| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12/numbers_of_islands.py)|
 
 
 <hr>
