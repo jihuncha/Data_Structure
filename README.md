@@ -56,7 +56,7 @@
      | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
      | 2 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py) | |
      | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py) | |
-     | 4 | [구멸보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py) | |
+     | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py) | |
 
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |

@@ -86,17 +86,17 @@ def solution(s):
         count = 1
         result_str = ""
 
-        # print(before_str)
+        # print('dd',before_str)
         for i in range(index_size, len(s) + 1, index_size):
             # print(i)
             temp_str = s[i:i + index_size]
             # print(temp_str)
             if before_str[:] == temp_str[:]:
-                # print("sd")
                 count += 1
             else:
                 result_str += str(count) + before_str if count >= 2 else before_str
                 before_str = temp_str[:]
+                # print('aa',before_str)
                 count = 1
         # 잔여 문자열 처리 (8자리이면서 3으로 짜른 경우...)
         result_str += str(count) + before_str if count >= 2 else before_str
@@ -113,4 +113,4 @@ def solution(s):
 
     return min(all_result_list) if all_result_list else answer
 
-print(solution("a"))
+print(solution("abcabc"))
