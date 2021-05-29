@@ -48,6 +48,11 @@
     * 왕실의 나이트: ( [실전4-3](com/huni/dongbins/chap04/problem4_3.py))
     * 게임 개발: ( [실전4-4](com/huni/dongbins/chap04/problem4_4.py) ) # 문제 규칙과 맞지 않게 풀어서 다시 풀기 필요..
   
+#### 5장 DFS/BFS
+* 실전
+    * 음료수 얼려 먹기 : ( [실전5-3](com/huni/dongbins/chap05/problem5_3.py) ) # 예제가 귀찮아서 그냥 풀이 복붙
+    * 미로 탈출 : ( [실전5-4](com/huni/dongbins/chap05/problem5_4.py) ) 
+
 <hr>
 
 [각종 사이트 문제 연습]
@@ -59,7 +64,7 @@
   1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
+     | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
      | 2 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py) | |
      | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py) | |
      | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py) | |
@@ -69,6 +74,14 @@
      | --- | --- | --- | --- | --- |
      | 1 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | 해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
      | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | [풀이](com/huni/sample/programmers/implement/implement_pro_2_example.py) | 
+     
+  3. DFS_BFS
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/sample/programmers/dfs_bfs/stack_queue_1.py) | |
+     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
+     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 미해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
+     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 미해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
      
 <hr>
 
