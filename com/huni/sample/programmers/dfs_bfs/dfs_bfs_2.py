@@ -23,3 +23,75 @@
 # n	computers	return
 # 3	[[1, 1, 0], [1, 1, 0], [0, 0, 1]]	2
 # 3	[[1, 1, 0], [1, 1, 1], [0, 1, 1]]	1
+
+#############################
+# 방문 여부 첸크하면서
+# bfs 수행
+# 내가 맞게 한건가?? 그냥 정답만 잘된듯..?
+#############################
+
+def solution(n, computers):
+    answer = 0
+    # 방문 여부 체크할 내용
+    visited = [False]* n
+
+    # bfs
+    def bfs(x):
+        # 방문처리
+        visited[x] = True
+        # index와 값으로 체크
+        for idx,i in enumerate(computers[x]):
+            # index가 같은 경우는 수행 필요없음(나자신)
+            # 방문하지 않았고 연결되어있는(1)인 경우 다음 index에 동일한 작업 수행
+            if idx != x and not visited[idx] and i == 1:
+                bfs(idx)
+
+    for k in range(n):
+        # 방문하지 않은경우 수행하고 체크한다.
+        if not visited[k]:
+            bfs(k)
+
+            answer+=1
+
+    return answer
+
+print(solution(3, [[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
+# print(solution(3, [[1, 1, 0], [1, 1, 1], [0, 1, 1]]))
+
+
+########### 다른 사람 풀이
+# 나랑 비슷한듯?
+def solution(n, computers):
+    answer = 0
+    visited = [0 for i in range(n)]
+    def dfs(computers, visited, start):
+        stack = [start]
+        while stack:
+            j = stack.pop()
+            if visited[j] == 0:
+                visited[j] = 1
+
+            for i in range(0, len(computers)):
+                if computers[j][i] ==1 and visited[i] == 0:
+                    stack.append(i)
+    i=0
+    while 0 in visited:
+        if visited[i] ==0:
+            dfs(computers, visited, i)
+            answer +=1
+        i+=1
+    return answer
+
+#### 2.플루이드-워셜 알고리즘 이라는데???
+# ???????????백만개
+def solution(n, computers):
+    temp = []
+    for i in range(n):
+        temp.append(i)
+    for i in range(n):
+        for j in range(n):
+            if computers[i][j]:
+                for k in range(n):
+                    if temp[k] == temp[i]:
+                        temp[k] = temp[j]
+    return len(set(temp))
