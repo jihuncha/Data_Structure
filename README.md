@@ -79,8 +79,8 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/sample/programmers/dfs_bfs/stack_queue_1.py) | |
-     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/implement_pro_1](com/huni/sample/programmers/dfs_bfs/stack_queue_2.py) | | 
-     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 미해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
+     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/sample/programmers/dfs_bfs/stack_queue_2.py) | | 
+     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
      | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 미해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
      
 <hr>
