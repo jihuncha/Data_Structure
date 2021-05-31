@@ -40,18 +40,41 @@
 import collections
 
 def solution(priorities, location):
-    return 
-    # index_list = [x for x in range(len(priorities))]
-    #
-    # print(index_list)
-    #
-    # while not priorities:
-    #     if priorities[0] < max(priorities[1:]):
-    #         index_list.append(index_list.pop(0))
-    #         priorities.append(priorities.pop(0))
-    #     else:
-    #         break
-    #
+    if len(priorities) == 1:
+        return 1
+
+    # index 용
+    stack = collections.deque([x for x in range(len(priorities))])
+    priorities_deque = collections.deque(priorities)
+
+    result_list = []
+
+    while priorities_deque:
+        temp_index = stack.popleft()
+        temp = priorities_deque.popleft()
+
+        if not priorities_deque:
+            result_list.append(temp_index)
+            break
+
+        if temp < max(priorities_deque):
+            priorities_deque.append(temp)
+            stack.append(temp_index)
+            # break
+        else:
+            result_list.append(temp_index)
+
+        if len(result_list) == len(priorities):
+            break
+            # break
+
+    return result_list.index(location) + 1
+
+print(solution([2, 1, 3, 2], 2))
+
+print(solution([1, 1, 9, 1, 1, 1], 0))
+
+print(solution([2, 2, 2, 1, 3, 4], 3))
     # print(index_list)
     # return index_list.index(location) + 1
 
@@ -102,6 +125,8 @@ def solution(priorities, location):
     #
     # return stack_deque.index(location) + 1
 
-print(solution([1], 0))
-print(solution([1, 1, 9, 1, 9, 1], 0))
+# print(solution([1], 0))
+# print(solution([1, 1, 9, 1, 9, 1], 0))
 # print(solution([1,1,1,1,1,2], 5))
+
+# print(solution([2,1,3,2], 2))
