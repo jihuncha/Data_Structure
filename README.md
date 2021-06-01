@@ -82,6 +82,8 @@
      | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/sample/programmers/dfs_bfs/stack_queue_2.py) | | 
      | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
      | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/sample/programmers/dfs_bfs/dfs_bfs_2.py) | | 
+     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/sample/programmers/dfs_bfs/stack_queue_3.py) | | 
+     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/sample/programmers/dfs_bfs/stack_queue_4.py) | | 
      
 <hr>
 
