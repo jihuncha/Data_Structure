@@ -40,7 +40,7 @@
 import collections
 
 def solution(priorities, location):
-    return 
+    return
     # index_list = [x for x in range(len(priorities))]
     #
     # print(index_list)
