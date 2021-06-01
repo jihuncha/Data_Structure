@@ -40,9 +40,6 @@
 import collections
 
 def solution(priorities, location):
-    return 
-    # index_list = [x for x in range(len(priorities))]
-    #
     if len(priorities) == 1:
         return 1
 
