@@ -25,7 +25,7 @@
 # 3	[[1, 1, 0], [1, 1, 1], [0, 1, 1]]	1
 
 #############################
-# 방문 여부 첸크하면서
+# 방문 여부 체크하면서
 # bfs 수행
 # 내가 맞게 한건가?? 그냥 정답만 잘된듯..?
 #############################
@@ -41,7 +41,7 @@ def solution(n, computers):
         visited[x] = True
         # index와 값으로 체크
         for idx,i in enumerate(computers[x]):
-            # index가 같은 경우는 수행 필요없음(나자신)
+            # index가 같은 경우는 수행 필요없음(나자신) -> 사실 visited에서 체크해서 필요없을듯?
             # 방문하지 않았고 연결되어있는(1)인 경우 다음 index에 동일한 작업 수행
             if idx != x and not visited[idx] and i == 1:
                 bfs(idx)
