@@ -5,6 +5,7 @@
 [개념 정리]
 
 * [DFS_BFS](com/huni/my_note/dfs_bfs/dfs_bfs_graph.md)
+* [Sorting](com/huni/my_note/sorting/sorting_ex.md)
 
 <hr>
 
@@ -53,6 +54,12 @@
     * 음료수 얼려 먹기 : ( [실전5-3](com/huni/dongbins/chap05/problem5_3.py) ) # 예제가 귀찮아서 그냥 풀이 복붙
     * 미로 탈출 : ( [실전5-4](com/huni/dongbins/chap05/problem5_4.py) ) 
 
+#### 5장 정렬
+* 실전
+    * 위에서 아래로 : ( [실전6-2](com/huni/dongbins/chap06/sorting6_2.py) ) 
+    * 성적이 낮은 순서로 학생 출력하기 : ( [실전6-3](com/huni/dongbins/chap06/sorting6_3.py) ) 
+    * 두 배열의 원소 교체 : ( [실전6-4](com/huni/dongbins/chap06/sorting6_4.py) ) 
+
 <hr>
 
 [각종 사이트 문제 연습]
@@ -83,8 +90,16 @@
      | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
      | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/sample/programmers/dfs_bfs/dfs_bfs_2.py) | | 
      | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/sample/programmers/dfs_bfs/stack_queue_3.py) | | 
-     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/sample/programmers/dfs_bfs/stack_queue_4.py) | | 
-     
+     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/sample/programmers/dfs_bfs/stack_queue_4.py) | |
+      
+  4. Sorting
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | 해결 | [해결/sorting_1](com/huni/sample/programmers/sorting/sorting_1.py) | |
+     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/sample/programmers/dfs_bfs/stack_queue_2.py) | | 
+     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
+     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/sample/programmers/dfs_bfs/dfs_bfs_2.py) | |
+    
 <hr>
 
 * 백준
