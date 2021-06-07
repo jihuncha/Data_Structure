@@ -97,7 +97,7 @@
      | --- | --- | --- | --- | --- |
      | 1 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | 해결 | [해결/sorting_1](com/huni/sample/programmers/sorting/sorting_1.py) | |
      | 2 | [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748) | 해결 | [해결/sorting_2](com/huni/sample/programmers/sorting/sorting_2.py) | | 
-     | 3 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
+     | 3 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/sorting_3](com/huni/sample/programmers/sorting/sorting_3.py) | | 
      | 4 | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | 해결 | [해결/dfs_bfs_2](com/huni/sample/programmers/dfs_bfs/dfs_bfs_2.py) | |
     
 <hr>

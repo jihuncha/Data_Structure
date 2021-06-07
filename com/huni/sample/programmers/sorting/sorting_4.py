@@ -23,4 +23,23 @@
 
 def solution(citations):
     answer = 0
+
+    temp_list = sorted(citations)
+    # print(temp_list)
+
+    middle_index = len(citations) // 2
+    # print(middle_index)
+
+    # for i in temp_list:
+
+    # if len(citations) % 2 == 0:
+    #     print("Dd")
+    # else:
+    answer = temp_list[middle_index]
+
     return answer
+
+print(solution([3, 0, 6, 1, 5]))
+print(solution([3, 0, 6, 1, 5, 10]))
+print(solution([1, 1, 1, 1, 1]))
+print(solution([1, 0, 0, 0, 0]))
