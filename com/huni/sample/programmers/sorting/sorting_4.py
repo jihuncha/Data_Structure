@@ -21,25 +21,74 @@
 #
 # ※ 공지 - 2019년 2월 28일 테스트 케이스가 추가되었습니다.
 
+
+
+#########################################
+# 문제가 이해가 안됨????
+# 왜 filter로 해도 안되는거지? // index인경우는 왜??
+# https://www.ibric.org/myboard/read.php?Board=news&id=270333
+# 나의 h는 어떻게 구할 수 있을까? 우측의 표와 같이 자신이 저널에 등재한 전체 논문중 많이 인용된 순으로 정렬한 후,
+# 피인용수가 논문수와 같아지거나 피인용수가 논문수보다 작아지기 시작하는 숫자가 바로 나의 h가 됩니다.
+#########################################
+
 def solution(citations):
-    answer = 0
+    # temp_list = sorted(citations)
+    #
+    # for check in range(len(temp_list)):
+    #     if temp_list[check] >= len(temp_list) - check:
+    #         return len(temp_list) - check
+    #
+    # return 0
 
-    temp_list = sorted(citations)
-    # print(temp_list)
+    temp_list = sorted(citations, reverse=True)
 
-    middle_index = len(citations) // 2
-    # print(middle_index)
+    # check -> 0,1,2,3,4,5... ???????뭐냐대체
+    # temp_list[check] -> 인용한수
+    for check in range(len(temp_list)):
+        print("test - ", temp_list[check], check)
+        if temp_list[check] <= check:
+            return check
 
-    # for i in temp_list:
+    return len(temp_list)
 
-    # if len(citations) % 2 == 0:
-    #     print("Dd")
-    # else:
-    answer = temp_list[middle_index]
+    # sorted_citations = sorted(citations, reverse=True)
+    # for i in range(len(sorted_citations)):
+    #     if sorted_citations[i] <= i:
+    #         return i
+    # return len(sorted_citations)
 
-    return answer
+    # # print(temp_list)
+    #
+    # result_list = []
+    # for idx,i in enumerate(temp_list):
+    #     len_condition = len(list(filter(lambda x : x >= i, temp_list)))
+    #     if len_condition >= i and len(temp_list) - len_condition <= i:
+    #         if i not in result_list:
+    #             result_list.append(i)
+    #
+    # # print(result_list)
+    #
+    # return max(result_list)
+
+
+    # print("dd - ", list(filter(lambda x : x > 2, temp_list)))
+
+    # count = 0
+    # i = 0
+    # result_list = []
+    # while i < len(temp_list):
+    #     count = temp_list[i]
+    #     if len(list(filter(lambda x : x >= count, temp_list))) >= count and len(list(filter(lambda x : x < count, temp_list))) < count:
+    #         # answer = count
+    #         result_list.append(count)
+    #     i += 1
+    #
+    # # print(result_list)
+    # return max(result_list) if result_list else 0
 
 print(solution([3, 0, 6, 1, 5]))
 print(solution([3, 0, 6, 1, 5, 10]))
 print(solution([1, 1, 1, 1, 1]))
 print(solution([1, 0, 0, 0, 0]))
+print(solution([6, 5, 4, 3, 1]))
+print(solution([1]))
