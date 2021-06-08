@@ -107,10 +107,28 @@
   1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결 완료/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py) | |
+     | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py) | |
   
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결 완료/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
-     | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결 완료/implement_2](com/huni/sample/backjoon/implement/implement_2.py)| |
+     | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
+     | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결/implement_2](com/huni/sample/backjoon/implement/implement_2.py)| |
+     
+  3. DFS_BFS
+    
+    
+
+
+  4. Sorting
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [국영수](https://www.acmicpc.net/problem/10825) | 해결 | [해결/sorting_back_1](com/huni/sample/backjoon/sorting/sorting_back_1.py)| |
+     | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/sample/backjoon/sorting/sorting_back_2.py)| |
+     | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/sample/backjoon/sorting/sorting_back_3.py)| |
+
+
+
+     
+
+

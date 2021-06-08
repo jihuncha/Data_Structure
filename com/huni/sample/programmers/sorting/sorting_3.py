@@ -147,7 +147,8 @@ print(solution([898,89,89898]))
 # 다른사람 풀이 2.
 # functools 체크
 # functools.cmp_to_key(func)
-# 구식 비교 함수를 키 함수로 변환합니다. (sorted(), min(), max(), heapq.nlargest(), heapq.nsmallest(), itertools.groupby()와 같은) 키 함수를 받아들이는 도구와 함께 사용됩니다.
+# 구식 비교 함수를 키 함수로 변환합니다. (sorted(), min(), max(), heapq.nlargest(), heapq.nsmallest(), itertools.groupby()와 같은)
+# 키 함수를 받아들이는 도구와 함께 사용됩니다.
 # 이 함수는 주로 비교 함수 사용을 지원하는 파이썬 2에서 변환되는 프로그램의 전이 도구로 사용됩니다.
 #
 # 비교 함수는 두 개의 인자를 받아들이고, 그들을 비교하여, 작으면 음수, 같으면 0, 크면 양수를 반환하는 콜러블입니다.
