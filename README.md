@@ -6,6 +6,7 @@
 
 * [DFS_BFS](com/huni/my_note/dfs_bfs/dfs_bfs_graph.md)
 * [Sorting](com/huni/my_note/sorting/sorting_ex.md)
+* [Binary_Search](com/huni/my_note/binary_search/binary_search.md)
 
 <hr>
 
@@ -54,11 +55,16 @@
     * 음료수 얼려 먹기 : ( [실전5-3](com/huni/dongbins/chap05/problem5_3.py) ) # 예제가 귀찮아서 그냥 풀이 복붙
     * 미로 탈출 : ( [실전5-4](com/huni/dongbins/chap05/problem5_4.py) ) 
 
-#### 5장 정렬
+#### 6장 정렬
 * 실전
     * 위에서 아래로 : ( [실전6-2](com/huni/dongbins/chap06/sorting6_2.py) ) 
     * 성적이 낮은 순서로 학생 출력하기 : ( [실전6-3](com/huni/dongbins/chap06/sorting6_3.py) ) 
     * 두 배열의 원소 교체 : ( [실전6-4](com/huni/dongbins/chap06/sorting6_4.py) ) 
+    
+#### 7장 이진탐색
+* 실전
+    * 부품 찾기 : ( [실전7-2](com/huni/dongbins/chap07/binary_search_02.py) ) 
+    * 떡볶이 떡 만들기 : ( [실전6-3](com/huni/dongbins/chap06/sorting6_3.py) ) # 파라메트릭 서치(Parametric Search) 유형 문제 -> 최적화 문제를 결정 문제로 바꾸어 푼다.
 
 <hr>
 
