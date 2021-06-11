@@ -1,0 +1,5 @@
+a = ["frodo", "front", "frost", "frozen", "frame", "kakao"]
+
+b = ["fro??", "????o", "fr???", "fro???", "pro?"]
+
+

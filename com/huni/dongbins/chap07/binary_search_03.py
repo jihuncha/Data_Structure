@@ -15,28 +15,31 @@
 # 4 6
 # 19 15 10 17
 #
-# 출력예시 17
+# 출력예시
+# 15
 
 ###################################################
 ### 절단기 높이가 10억인걸 보고 이진 탐색임을 알아야한다!!!
 
 
-n,m = input().split()
+n, m = input().split()
 
-data = list(map(int,input().split()))
-
-data.sort()
+data = list(map(int, input().split()))
 
 start = 0
 end = max(data)
-mid = (start + end) // 2
-cutting = 1e9
 
+temp_result = 0
 while start <= end:
-    if cutting < m:
-        break
+    mid = (start + end) // 2
 
-    cutting = sum(list(filter(data, lambda x:)))
+    cutting = sum(list(map(lambda x:x - mid if x - mid > 0 else 0, data)))
 
+    if cutting >= int(m):
+        temp_result = mid
+        start = mid + 1
 
+    if cutting < int(m):
+        end = mid - 1
 
+print(temp_result)
