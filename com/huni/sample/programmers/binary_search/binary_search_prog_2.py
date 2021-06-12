@@ -43,15 +43,25 @@
 # "fro???"는 "frozen"에 매치되므로 1입니다.
 # "pro?"는 매치되는 가사 단어가 없으므로 0 입니다.
 
+################
+# 4단계 프로그래머스, 카카오 2020문제
+# 효율성 2,3 실패
+# trie 구조를 사용하라는데 처음 들어봄
+# 학습 필요 문제!!
+################
+
 def solution(words, queries):
     answer = []
     dic = {}
 
+    # 쿼리할 문장에서 하나씩 뺴온다
     for data in queries:
+        # 이미 진행한적 있는 문자열인 경우 answer에 더해주고 continue 수행 - 시간 단축을 위함
         if data in dic:
             answer.append(dic[data])
             continue
 
+        # ? 가 맨 앞 또는 맨뒤에 있으므로 해당 문자열 index 저장 (c,d)
         temp_len = len(data)
         check_first_last = data.index("?")
         count_check = data.count("?")
@@ -62,12 +72,16 @@ def solution(words, queries):
             # a,b = 0, count_check
             c,d = count_check, temp_len
 
+        # 단어들을 탐색하면서 체크 한다.
         for j in words:
+            # 해당 범위 단어가 동일하면서 길이가 같은 경우
             if data[c:d] == j[c:d] and len(j) == temp_len:
+                # 딕셔너리에 존재하는 유무 체크
                 if data in dic:
                     dic[data] += 1
                 else:
                     dic[data] = 1
+
         if data in dic:
             answer.append(dic[data])
         else:
