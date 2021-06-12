@@ -105,6 +105,14 @@
      | 2 | [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748) | 해결 | [해결/sorting_2](com/huni/sample/programmers/sorting/sorting_2.py) | | 
      | 3 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/sorting_3](com/huni/sample/programmers/sorting/sorting_3.py) | | 
      | 4 | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | 미해결 | [미해결/sorting_4](com/huni/sample/programmers/sorting/sorting_4.py) | |
+     
+  5. Binary_Search
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [입국 심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | 미해결 | [미해결/binary_1](com/huni/sample/programmers/binary_search/binary_search_prog_1.py) | |
+     | 2 | [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) | 미해결 | [미해결/binary_2](com/huni/sample/programmers/binary_search/binary_search_prog_2.py) | | 
+    
+     
     
 <hr>
 
@@ -133,8 +141,10 @@
      | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/sample/backjoon/sorting/sorting_back_2.py)| |
      | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/sample/backjoon/sorting/sorting_back_3.py)| |
 
-
-
+ 5. Binary_Search
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [공유기 설치](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/binary_back_1](com/huni/sample/backjoon/binary_search/binary_search_back_1.py) | | 
      
 
 
