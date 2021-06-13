@@ -34,17 +34,51 @@
 #
 # 20분이 되었을 때, 두 번째 심사대가 비지만 6번째 사람이 그곳에서 심사를 받지 않고 1분을 더 기다린 후에 첫 번째 심사대에서 심사를 받으면 28분에 모든 사람의 심사가 끝납니다.
 
-#####
+###########
 # 10억명 10억분이 말이냐
+# 해결방안이 모색안되서 답보고..ㅠ
+
+
+###############################
+# 문제의 핵심은 최소, 최대 범위를 구한 뒤 구하려고 하는 답을 이분 탐색으로 범위를 좁혀가며 답을 구하는 것 입니다.
+#
+# 문제에서 최대 범위는 심사관 중 가장 오래걸리는 심사관을 계속 검사 받는 경우입니다.
+# 최소, 최대 범위의 중간값인 mid가 n명을 심사 할 수 있는 지 아닌 지를 파악하며 이분 탐색을 진행합니다.
+#
+# n명을 심사 할 수 있다면, 답을 갱신하고, 최대 범위를 줄여봅니다.
+# n명을 심사 할 수 없다면, 최소범위를 늘려봅니다.
+
+# 이해좀 시켜줘~~ ㅠㅠ
+# https://codingspooning.tistory.com/78
+
 
 def solution(n, times):
     answer = 0
 
-    times.sort()
+    left = 1
+    right = max(times) * n
+    print(left,right)
 
+    while left <= right:
+        mid = (left + right) // 2
+        print('mid - ', mid)
+        count = 0
+        for time in times:
+            count += mid // time
+        print("count = ", count)
 
-
-
+        if count >= n:
+            answer = mid
+            right = mid - 1
+        else:
+            left = mid + 1
+        print("left and right = ", left,right)
 
     return answer
+
+print(solution(6,[7, 10]))
+
+
+
+
 

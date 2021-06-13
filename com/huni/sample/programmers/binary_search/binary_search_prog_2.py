@@ -142,3 +142,90 @@ print(solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["fro??"
 # 테스트 3 〉	실패 (시간 초과)
 # 테스트 4 〉	통과 (2.27ms, 13.3MB)
 # 테스트 5 〉	통과 (5.71ms, 13.8MB)
+
+#####################################################
+# 이진 탐색을 통한 해결 가능
+# 1. 각 단어를 길이로 나눔
+# 2. 리스트 정렬 이후에 각 쿼리에 대해서 이진탐색을 사용
+#
+# ex 길이가 5인 단어끼리 배열하여 fro?? 인 경우 fro로 시작하는 단어를 탐색하면 됨
+# -> fro로 시작하는 처음 단어 와 fro 로 시작하는 마지막 단어를 찾아 그 위치 차이를 계산한다.
+#
+# 또는 froaa 보다 크거나 같으면서 frozz보다 작거나 같은 단어를 찾는다.
+#
+# 접두사에 ?가 달린 경우도 고려하여 글자를 뒤집은걸로 같은 동작을 반복해주면된다.
+
+import bisect
+
+def count_by_range(a, left_value, right_value):
+    right_index = bisect.bisect_right(a, right_value)
+    left_index = bisect.bisect_left(a, left_value)
+
+    return right_index - left_index
+
+
+def solution(words, queries):
+    answer = []
+
+    length_list = [[] for _ in range(10001)]
+    length_list_reverse = [[] for _ in range(10001)]
+    for i in words:
+        length_list[len(i)].append(i)
+        length_list_reverse[len(i)].append(i[::-1])
+
+    for i in range(10001):
+        length_list[i].sort()
+        length_list_reverse[i].sort()
+
+    for check in queries:
+        if check[0] != "?":
+            res = count_by_range(length_list[len(check)], check.replace('?','a'), check.replace('?','z'))
+        else:
+            res = count_by_range(length_list_reverse[len(check)], check[::-1].replace('?','a'), check[::-1].replace('?','z'))
+        answer.append(res)
+
+    # for check in queries:
+    #     count = 0
+    #     if check[0] == "?":
+    #         for find_out in length_list[len(check)]:
+    #             if find_out >= check[::-1].replace("?","a") and find_out <= check[::-1].replace("?","z"):
+    #                 count += 1
+    #     else:
+    #         for find_out in length_list[len(check)]:
+    #             if find_out >= check.replace("?","a") and find_out <= check.replace("?","z"):
+    #                 count += 1
+    #     answer.append(count)
+
+    return answer
+
+print(solution(["frodo", "front", "frost", "frozen", "frame", "kakao"],
+                   ["fro??", "????o", "fr???", "fro???", "pro?"]))
+
+
+# 테스트 1 〉	통과 (3.88ms, 11.5MB)
+# 테스트 2 〉	통과 (4.28ms, 11.3MB)
+# 테스트 3 〉	통과 (6.05ms, 11.4MB)
+# 테스트 4 〉	통과 (3.82ms, 11.5MB)
+# 테스트 5 〉	통과 (3.94ms, 11.5MB)
+# 테스트 6 〉	통과 (4.46ms, 11.4MB)
+# 테스트 7 〉	통과 (4.10ms, 11.4MB)
+# 테스트 8 〉	통과 (4.32ms, 11.4MB)
+# 테스트 9 〉	통과 (4.76ms, 11.3MB)
+# 테스트 10 〉	통과 (4.20ms, 11.4MB)
+# 테스트 11 〉	통과 (3.95ms, 11.4MB)
+# 테스트 12 〉	통과 (3.90ms, 11.3MB)
+# 테스트 13 〉	통과 (5.92ms, 11.7MB)
+# 테스트 14 〉	통과 (5.38ms, 11.8MB)
+# 테스트 15 〉	통과 (7.02ms, 11.5MB)
+# 테스트 16 〉	통과 (5.83ms, 11.5MB)
+# 테스트 17 〉	통과 (5.57ms, 11.7MB)
+# 테스트 18 〉	통과 (5.66ms, 11.6MB)
+# 효율성  테스트
+# 테스트 1 〉	통과 (110.96ms, 24.4MB)
+# 테스트 2 〉	통과 (145.68ms, 27.2MB)
+# 테스트 3 〉	통과 (145.21ms, 29.2MB)
+# 테스트 4 〉	통과 (6.50ms, 14MB)
+# 테스트 5 〉	통과 (6.21ms, 14.4MB)
+
+
+### trie 구조 학습 필요~

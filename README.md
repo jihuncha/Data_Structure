@@ -4,9 +4,9 @@
 
 [개념 정리]
 
-* [DFS_BFS](com/huni/my_note/dfs_bfs/dfs_bfs_graph.md)
-* [Sorting](com/huni/my_note/sorting/sorting_ex.md)
-* [Binary_Search](com/huni/my_note/binary_search/binary_search.md)
+* [DFS_BFS](com/huni/my_note/theory/dfs_bfs/dfs_bfs_graph.md)
+* [Sorting](com/huni/my_note/theory/sorting/sorting_ex.md)
+* [Binary_Search](com/huni/my_note/theory/binary_search/binary_search.md)
 
 <hr>
 
@@ -141,7 +141,7 @@
      | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/sample/backjoon/sorting/sorting_back_2.py)| |
      | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/sample/backjoon/sorting/sorting_back_3.py)| |
 
- 5. Binary_Search
+  5. Binary_Search
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [공유기 설치](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/binary_back_1](com/huni/sample/backjoon/binary_search/binary_search_back_1.py) | | 

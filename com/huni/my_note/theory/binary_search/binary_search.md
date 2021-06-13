@@ -128,7 +128,7 @@ else:
 
 * 이진 탐색 트리
     * 이진 탐색이 동작 할 수 있도록 고안된, 효율적인 탐색이 가능한 자료구조
-        ![binary_search_tree.png](binary_search_tree.png)
+        ![binary_search_tree.png](binary_search_tree.PNG)
     
     * 특징
         1. 부모 노드보다 왼쪽 자식 노드가 작다
