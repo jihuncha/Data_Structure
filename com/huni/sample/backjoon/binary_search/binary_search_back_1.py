@@ -32,3 +32,137 @@
 #
 # 힌트
 # 공유기를 1, 4, 8 또는 1, 4, 9에 설치하면 가장 인접한 두 공유기 사이의 거리는 3이고, 이 거리보다 크게 공유기를 3개 설치할 수 없다.
+
+# 7 4
+# 1
+# 2
+# 4
+# 9
+# 11
+# 22
+# 33
+
+# 2 2
+# 1
+# 99
+
+n,c = map(int,input().split())
+
+data = [int(input()) for _ in range(n)]
+
+# print(data)
+
+data.sort()
+
+# gap 차이를 바탕으로
+left = data[1] - data[0]
+right = data[n-1] - data[0]
+result = 0
+
+while left <= right:
+    mid = (left + right) // 2
+    # 처음위치 value 및 count 설정 (1)
+    value = data[0]
+    count = 1
+
+    for i in range(1,len(data)):
+        if data[i] >= value + mid:
+            count += 1
+            value = data[i]
+
+    # for check in data[1:]:
+    #     if check >= mid + value:
+    #         value = check
+    #         count += 1
+    # 설치한것이 조건에 충전한 경우
+    # gap 을 늘려준다. 결과를 가지고 있는다.
+    if count >= c:
+        left = mid + 1
+        result = mid
+    # 부족한 경우
+    # gap 을 좁혀준다.
+    else:
+        right = mid - 1
+
+print(result)
+
+# left = 0
+# right = len(data) - 1
+
+# count = c - 2
+#
+# index_list = [data[left], data[right]]
+#
+# def binary_search(count, left, right):
+#     mid = (left+right) // 2
+#     index_list.append(data[mid])
+#
+#     count -= 1
+#     if count == 0:
+#         return
+#     else:
+#         binary_search(count, left, mid - 1)
+#         binary_search(count, mid + 1, right)
+#
+#
+# # while left <= right:
+# #     mid = (left+right) // 2
+# #     index_list.append(data[mid])
+# #
+# #     count -= 1
+# #     # break
+# #     if count == 0:
+# #         break
+# #     else:
+#
+# if n > 2:
+#     binary_search(count, left, right)
+#     index_list.sort()
+#
+#     # print(index_list)
+#
+#     result_list = []
+#     for k in range(len(index_list) - 1):
+#         result_list.append(index_list[k + 1] - index_list[k])
+#
+#     print(min(result_list))
+# else:
+#     print(data[1]-data[0])
+
+
+n, c = map(int, input().split())
+
+house = []
+for _ in range(n):
+    x = int(input())
+    house.append(x)
+
+house.sort()
+
+# 좌표값의 최소값
+start = 1
+# 가장 높은 좌표와 가장 낮은 좌표의 차이
+end = house[-1] - house[0]
+
+result = 0
+
+while (start <= end):
+    mid = (start + end) // 2  # 해당 gap
+    old = house[0]
+    count = 1
+
+    for i in range(1, len(house)):
+        if house[i] >= old + mid:  # gap 이상
+            count += 1
+            old = house[i]
+
+    if count >= c:
+        start = mid + 1
+        result = mid
+    else:
+        end = mid - 1
+
+print(result)
+
+
+

@@ -49,6 +49,7 @@
 # n명을 심사 할 수 없다면, 최소범위를 늘려봅니다.
 
 # 이해좀 시켜줘~~ ㅠㅠ
+# https://wwlee94.github.io/category/algorithm/binary-search/immigration/
 # https://codingspooning.tistory.com/78
 
 
@@ -63,13 +64,18 @@ def solution(n, times):
         mid = (left + right) // 2
         print('mid - ', mid)
         count = 0
+        # 주어진 시간안에 심사위원이 몇명 심사 할수 있는지 카운트하는 것
         for time in times:
             count += mid // time
         print("count = ", count)
 
+        # 모든 사람이 심사 가능한 경우
+        # answer에 저장한다.
+        # mid 줄여본다
         if count >= n:
             answer = mid
             right = mid - 1
+        # mid 늘려본다.
         else:
             left = mid + 1
         print("left and right = ", left,right)
