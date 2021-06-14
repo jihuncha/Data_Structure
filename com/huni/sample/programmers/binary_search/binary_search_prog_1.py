@@ -48,16 +48,17 @@
 # n명을 심사 할 수 있다면, 답을 갱신하고, 최대 범위를 줄여봅니다.
 # n명을 심사 할 수 없다면, 최소범위를 늘려봅니다.
 
-# 이해좀 시켜줘~~ ㅠㅠ
+
 # https://wwlee94.github.io/category/algorithm/binary-search/immigration/
 # https://codingspooning.tistory.com/78
 
-
+# 6 -[ 7 , 10]
 def solution(n, times):
     answer = 0
 
     left = 1
     right = max(times) * n
+
     print(left,right)
 
     while left <= right:

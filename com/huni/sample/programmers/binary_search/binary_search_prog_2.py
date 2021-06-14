@@ -169,6 +169,7 @@ def solution(words, queries):
 
     length_list = [[] for _ in range(10001)]
     length_list_reverse = [[] for _ in range(10001)]
+
     for i in words:
         length_list[len(i)].append(i)
         length_list_reverse[len(i)].append(i[::-1])
