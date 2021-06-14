@@ -10,6 +10,13 @@
 
 <hr>
 
+[Python]
+
+* 기본 Library
+    * [Bisect](com/huni/my_note/knowledge/library/bisect/bisect.md)
+
+<hr>
+
 [파이썬 알고리즘 인터뷰] 
 
 ### Github : https://github.com/onlybooks/algorithm-interview
