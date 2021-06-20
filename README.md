@@ -25,10 +25,12 @@
 
 | 번호 | 제목 | 난이도 | 장 | 풀이 코드 |
 | --- | --- | ---- | - | --- |
-| 1 | [유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/) | ★ | 6장. 문자열 조작 | [palindrome.py](com/huni/algorithm_interview/chap06/palindrome.py)|
-| 2 | [문자열 뒤집기](https://leetcode.com/problems/reverse-string/) | ★ | 6장. 문자열 조작 | [reverse_string.py](com/huni/algorithm_interview/chap06/reverse_string.py)|
-| 3 | [로그파일 재정렬](https://leetcode.com/problems/reorder-data-in-log-files/) | ★ | 6장. 문자열 조작 | [reorder_log_files.py](com/huni/algorithm_interview/chap06/reorder_log_files.py)|
-| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12/numbers_of_islands.py)|
+| 1 | [유효한 팰린드롬](https://leetcode.com/problems/valid-palindrome/) | ★ | 6장. 문자열 조작 | [palindrome.py](com/huni/algorithm_interview/chap06_string_manipulation/palindrome.py)|
+| 2 | [문자열 뒤집기](https://leetcode.com/problems/reverse-string/) | ★ | 6장. 문자열 조작 | [reverse_string.py](com/huni/algorithm_interview/chap06_string_manipulation/reverse_string.py)|
+| 3 | [로그파일 재정렬](https://leetcode.com/problems/reorder-data-in-log-files/) | ★ | 6장. 문자열 조작 | [reorder_log_files.py](com/huni/algorithm_interview/chap06_string_manipulation/reorder_log_files.py)|
+| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12_graph/numbers_of_islands.py)|
+| 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Maximum Depth of Binary Tree.py)|
+| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [Diameter of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Diameter of Binary Tree.py)|
 
 
 <hr>
@@ -43,35 +45,44 @@
 #### 3장 그리디
 
 * 이론
-    * 거스름돈 문제: ( [예제3-1](com/huni/dongbins/chap03/sample3_1.py) )
+    * 거스름돈 문제: ( [예제3-1](com/huni/dongbins/chap03_greedy/sample3_1.py) )
 * 실전
-    * 동빈이의 큰 수의 법칙: ( [실전3-2](com/huni/dongbins/chap03/problem3_2.py))
-    * 숫자 카드게임: ( [실전3-3](com/huni/dongbins/chap03/problem3_3.py) )
-    * 1이 될 때까지: ( [실전3-4](com/huni/dongbins/chap03/problem3_4.py) )
+    * 동빈이의 큰 수의 법칙: ( [실전3-2](com/huni/dongbins/chap03_greedy/problem3_2.py))
+    * 숫자 카드게임: ( [실전3-3](com/huni/dongbins/chap03_greedy/problem3_3.py) )
+    * 1이 될 때까지: ( [실전3-4](com/huni/dongbins/chap03_greedy/problem3_4.py) )
 
 #### 4장 구현
 * 이론
-    * 상하좌우 : ( [예제4-1](com/huni/dongbins/chap04/sample4_1.py) )
-    * 시각 : ( [예제4-2](com/huni/dongbins/chap04/sample4_2.py) )
+    * 상하좌우 : ( [예제4-1](com/huni/dongbins/chap04_implementation/sample4_1.py) )
+    * 시각 : ( [예제4-2](com/huni/dongbins/chap04_implementation/sample4_2.py) )
 * 실전
-    * 왕실의 나이트: ( [실전4-3](com/huni/dongbins/chap04/problem4_3.py))
-    * 게임 개발: ( [실전4-4](com/huni/dongbins/chap04/problem4_4.py) ) # 문제 규칙과 맞지 않게 풀어서 다시 풀기 필요..
+    * 왕실의 나이트: ( [실전4-3](com/huni/dongbins/chap04_implementation/problem4_3.py))
+    * 게임 개발: ( [실전4-4](com/huni/dongbins/chap04_implementation/problem4_4.py) ) # 문제 규칙과 맞지 않게 풀어서 다시 풀기 필요..
   
 #### 5장 DFS/BFS
 * 실전
-    * 음료수 얼려 먹기 : ( [실전5-3](com/huni/dongbins/chap05/problem5_3.py) ) # 예제가 귀찮아서 그냥 풀이 복붙
-    * 미로 탈출 : ( [실전5-4](com/huni/dongbins/chap05/problem5_4.py) ) 
+    * 음료수 얼려 먹기 : ( [실전5-3](com/huni/dongbins/chap05_dfs_bfs/problem5_3.py) ) # 예제가 귀찮아서 그냥 풀이 복붙
+    * 미로 탈출 : ( [실전5-4](com/huni/dongbins/chap05_dfs_bfs/problem5_4.py) ) 
 
 #### 6장 정렬
 * 실전
-    * 위에서 아래로 : ( [실전6-2](com/huni/dongbins/chap06/sorting6_2.py) ) 
-    * 성적이 낮은 순서로 학생 출력하기 : ( [실전6-3](com/huni/dongbins/chap06/sorting6_3.py) ) 
-    * 두 배열의 원소 교체 : ( [실전6-4](com/huni/dongbins/chap06/sorting6_4.py) ) 
+    * 위에서 아래로 : ( [실전6-2](com/huni/dongbins/chap06_sorting/sorting6_2.py) ) 
+    * 성적이 낮은 순서로 학생 출력하기 : ( [실전6-3](com/huni/dongbins/chap06_sorting/sorting6_3.py) ) 
+    * 두 배열의 원소 교체 : ( [실전6-4](com/huni/dongbins/chap06_sorting/sorting6_4.py) ) 
     
 #### 7장 이진탐색
 * 실전
-    * 부품 찾기 : ( [실전7-2](com/huni/dongbins/chap07/binary_search_02.py) ) 
-    * 떡볶이 떡 만들기 : ( [실전6-3](com/huni/dongbins/chap06/sorting6_3.py) ) # 파라메트릭 서치(Parametric Search) 유형 문제 -> 최적화 문제를 결정 문제로 바꾸어 푼다.
+    * 부품 찾기 : ( [실전7-2](com/huni/dongbins/chap07_binary_search/binary_search_02.py) ) 
+    * 떡볶이 떡 만들기 : ( [실전6-3](com/huni/dongbins/chap06_sorting/sorting6_3.py) ) # 파라메트릭 서치(Parametric Search) 유형 문제 -> 최적화 문제를 결정 문제로 바꾸어 푼다.
+
+#### 8장 다이나믹 프로그래밍
+* 실전
+    * 1로 만들기 : ( [실전8-2](com/huni/dongbins/chap08_dynamic/dynamic_2.py)) 
+    * 개미 전사 : ( [실전8-3](com/huni/dongbins/chap08_dynamic/dynamic_3.py))
+    * 바닥 공사 : ( [실전8-4](com/huni/dongbins/chap08_dynamic/dynamic_4.py))
+    * 효율적인 화폐 구성 : ( [실전8-5](com/huni/dongbins/chap08_dynamic/dynamic_5.py)) # 어렵당.. 
+    
+
 
 <hr>
 
