@@ -29,21 +29,18 @@ for i in range(n):
 # 0 1 2 3 4
 
 for i in range(1, n):
-    for j in range(0, len(array[i])):
-        if len(array[i-1]) == 1:
-            array[i][j] = array[i][j] + array[i-1][0]
+    for j in range(len(array[i])):
+        if j == 0:
+            left = 0
         else:
-            if j - 1 < 0:
-                left = 0
-            else:
-                left = array[i-1][j-1]
-            if j + 1 >= len(array[i-1]):
-                right = 0
-            else:
-                right = array[i-1][j]
-            print("test - ", i, j,left,right)
+            left = array[i - 1][j - 1]
+        if j == len(array[i])-1:
+            right = 0
+        else:
+            right = array[i - 1][j]
+        # print("test - ", i, j, left, right)
 
-            array[i][j] = max(array[i][j] + left, array[i][j] + right)
+        array[i][j] = max(array[i][j] + left, array[i][j] + right)
 
             # array[i][j] = max(array[i][j] + array[i][j-1], array[i][j] + array[i][j+1])
 
