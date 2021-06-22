@@ -41,7 +41,6 @@
 
 ### Repo
 
-
 #### 3장 그리디
 
 * 이론
@@ -82,8 +81,6 @@
     * 바닥 공사 : ( [실전8-4](com/huni/dongbins/chap08_dynamic/dynamic_4.py))
     * 효율적인 화폐 구성 : ( [실전8-5](com/huni/dongbins/chap08_dynamic/dynamic_5.py)) # 어렵당.. 
     
-
-
 <hr>
 
 [각종 사이트 문제 연습]
@@ -129,40 +126,47 @@
      | --- | --- | --- | --- | --- |
      | 1 | [입국 심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | 미해결 | [미해결/binary_1](com/huni/sample/programmers/binary_search/binary_search_prog_1.py) | |
      | 2 | [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) | 미해결 | [미해결/binary_2](com/huni/sample/programmers/binary_search/binary_search_prog_2.py) | | 
-    
      
+  6. Dynamic_programming
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895) | 미해결 | [미해결/dynamic_1](com/huni/sample/programmers/dynamic_programming/prog_dynamic_1.py) | |
+     | 2 | [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) | 해결 | [해결/dynamic_2](com/huni/sample/programmers/dynamic_programming/prog_dynamic_2.py) | | 
+
     
 <hr>
 
 * 백준
-
-  1. Greedy
+    
+    1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py) | |
-  
-  2. Implement
+    
+    2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
      | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결/implement_2](com/huni/sample/backjoon/implement/implement_2.py)| |
-     
-  3. DFS_BFS
-    
-    
-
-
-  4. Sorting
+  
+    3. DFS_BFS
+  
+    4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [국영수](https://www.acmicpc.net/problem/10825) | 해결 | [해결/sorting_back_1](com/huni/sample/backjoon/sorting/sorting_back_1.py)| |
      | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/sample/backjoon/sorting/sorting_back_2.py)| |
      | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/sample/backjoon/sorting/sorting_back_3.py)| |
-
-  5. Binary_Search
+       
+    5. Binary_Search
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [공유기 설치](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/binary_back_1](com/huni/sample/backjoon/binary_search/binary_search_back_1.py) | | 
-     
+     | 1 | [공유기 설치](https://www.acmicpc.net/problem/2110) | 미해결 | [미해결/binary_back_1](com/huni/sample/backjoon/binary_search/binary_search_back_1.py) | | 
+
+    6. Dynamic_programming
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [입국 심사](https://www.acmicpc.net/problem/14501) | 미해결 | [미해결/binary_1](com/huni/sample/backjoon/dynamic_programming/back_dynamic_1.py) | |
+     | 2 | [가사 검색](https://www.acmicpc.net/problem/18353) | 미해결 | [미해결/binary_2](com/huni/sample/backjoon/dynamic_programming/back_dynamic_2.py) | | 
 
 
