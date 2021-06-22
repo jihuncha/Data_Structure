@@ -22,7 +22,24 @@ for i in range(test_case):
     for i in range(n):
         array.append(data[temp:temp + m])
         temp += m
-    # print(array)
+    print(array)
 
-    # result_array = array
-    # for i in range(n):
+    for j in range(1, m):
+        for i in range(n):
+            # print(array[i][j])
+            mid = array[i][j-1]
+            if i - 1 < 0:
+                top = 0
+            else:
+                top = array[i-1][j-1]
+
+            if i + 1 > n - 1:
+                bottom = 0
+            else:
+                bottom = array[i + 1][j - 1]
+
+            array[i][j] = max(array[i][j] + top,array[i][j] + bottom,array[i][j] + mid)
+
+    result = max([array[x][m-1] for x in range(n)])
+    print(result)
+
