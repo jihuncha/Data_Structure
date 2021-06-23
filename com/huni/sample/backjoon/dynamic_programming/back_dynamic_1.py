@@ -96,3 +96,79 @@
 #
 # 예제 출력 4
 # 90
+
+#### 문제 접근을 잘못했네
+#### 뒤에서 부터 해야할듯.
+
+data_len = int(input())
+
+data = []
+for insert_data in range(data_len):
+    a,b = map(int,input().split())
+    data.append((a,b))
+
+result_list = []
+
+# def check_max_value(idx: int):
+#     # print("check_max_value", idx,data_len)
+#     index = idx
+#     left_count = data[idx][0]
+#     result = 0
+#     last = data[idx][1]
+#     while index < data_len:
+#         if left_count == 0:
+#             result += last
+#             temp = data[index]
+#             left_count = temp[0]
+#             last = temp[1]
+#         left_count -= 1
+#         index += 1
+#         # if left_count != 0:
+#         #     result -= last
+#
+#         # print(left_count)
+#     #     print("check", index, left_count)
+#     #     left_count -= 1
+#     #
+#     #     if left_count == 0 or index == idx:
+#     #         temp = data[index]
+#     #         left_count = temp[0]
+#     #         last = temp[1]
+#     #         result += last
+#     #         print(result)
+#     #     index += 1
+#     # if left_count != 0:
+#     #     result -= last
+#     #
+#     result_list.append(result)
+#
+# # print(result)
+# for i in range(data_len):
+#     check_max_value(i)
+#
+# print(result_list)
+# print(max(result_list))
+
+####
+# n = int(input())
+# t = []
+# p = []
+# dp = [0] * (n + 1)
+# max_value = 0
+#
+# for _ in range(n):
+#     x,y = map(int, input().split())
+#     t.append(x)
+#     p.append(y)
+#
+# for i in range(n-1, -1, -1):
+#     time = t[i] + i
+#
+#     if time <= n:
+#         dp[i] = max(p[i] + dp[time], max_value)
+#         max_value = dp[i]
+#
+#     else:
+#         dp[i] = max_value
+#
+# print(max_value)
