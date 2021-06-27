@@ -97,8 +97,9 @@
 # 예제 출력 4
 # 90
 
-#### 문제 접근을 잘못했네
-#### 뒤에서 부터 해야할듯.
+#############################################
+#### 겨우겨우..
+#### d[i] = max(d[i-ti] + d[i], d[before??]])
 
 data_len = int(input())
 
@@ -107,7 +108,52 @@ for insert_data in range(data_len):
     a,b = map(int,input().split())
     data.append((a,b))
 
-result_list = []
+# [(3, 10), (5, 20), (1, 10), (1, 20), (2, 15), (4, 40), (2, 200)]
+# print(data)
+
+# 결과 담는 리스트
+result_list = [0] * data_len
+
+# 뒤에서 부터 확인
+for check in range(data_len-1, -1,-1):
+    # 지나야하는 날짜 + 현재 날짜가 데이터 범위에 포함되어 있으면.
+    if data[check][0] + check - 1 <= data_len - 1:
+        # max값은 현재 값 // 현재에서 지나야하는 날짜 이후 부터의 max 값 + 현재 값
+        # 뒷부분은 범위 벗어나는거 방지하기 위한 예외처리 -> 현재값으로
+        max_result = max(data[check][1], max(result_list[check+data[check][0]:]) + data[check][1]) \
+            if check + data[check][0] <= data_len - 1 else data[check][1]
+    else:
+        # 범위에 해당 되지 않는 경우는 0으로
+        max_result = 0
+    # 값 갱신
+    result_list[check] = max_result
+
+print(max(result_list))
+
+
+##### 풀이
+# n = int(input())
+# t = []
+# p = []
+# dp = [0] * (n + 1)
+# max_value = 0
+#
+# for _ in range(n):
+#     x,y = map(int, input().split())
+#     t.append(x)
+#     p.append(y)
+#
+# for i in range(n-1, -1, -1):
+#     time = t[i] + i
+#
+#     if time <= n:
+#         dp[i] = max(p[i] + dp[time], max_value)
+#         max_value = dp[i]
+#
+#     else:
+#         dp[i] = max_value
+#
+# print(max_value)
 
 # def check_max_value(idx: int):
 #     # print("check_max_value", idx,data_len)
@@ -148,27 +194,3 @@ result_list = []
 #
 # print(result_list)
 # print(max(result_list))
-
-####
-# n = int(input())
-# t = []
-# p = []
-# dp = [0] * (n + 1)
-# max_value = 0
-#
-# for _ in range(n):
-#     x,y = map(int, input().split())
-#     t.append(x)
-#     p.append(y)
-#
-# for i in range(n-1, -1, -1):
-#     time = t[i] + i
-#
-#     if time <= n:
-#         dp[i] = max(p[i] + dp[time], max_value)
-#         max_value = dp[i]
-#
-#     else:
-#         dp[i] = max_value
-#
-# print(max_value)
