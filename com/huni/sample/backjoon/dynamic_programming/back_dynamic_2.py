@@ -31,3 +31,22 @@
 # 15 11 4 8 5 2 4
 # 예제 출력 1
 # 2
+
+# 5
+# 10 1 12 13 2 14
+
+
+n = int(input())
+
+data = list(map(int, input().split()))
+
+result = []
+for i in range(len(data) - 1):
+    for j in range(i, len(data)):
+        # if data[i] < data[j]:
+            # result.append()
+            break
+        # print(i,j)
+
+print(result)
+print(len(result))

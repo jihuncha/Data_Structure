@@ -31,6 +31,7 @@
 | 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12_graph/numbers_of_islands.py)|
 | 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Maximum Depth of Binary Tree.py)|
 | 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [Diameter of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Diameter of Binary Tree.py)|
+| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12_graph/numbers_of_islands.py)|
 
 
 <hr>
