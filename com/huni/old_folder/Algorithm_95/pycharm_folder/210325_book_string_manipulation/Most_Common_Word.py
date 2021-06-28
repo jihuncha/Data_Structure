@@ -35,7 +35,7 @@ from typing import List
 ### 풀이
 import re
 paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
-#sample
+#coding_site_problem
 # ^ -> now
 # \w 문자
 # 문자가 아닌것은 모두 공백으로 치환

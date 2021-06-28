@@ -39,7 +39,7 @@ for move in data:
         position = (nx, ny)
 print(position)
 
-#book sample
+#book coding_site_problem
 # N 입력받기
 # n = int(input())
 # x, y = 1, 1

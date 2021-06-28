@@ -93,46 +93,46 @@
   1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) | 해결 | [해결 완료/greedy_1](com/huni/sample/programmers/greedy/greedy_1.py) | | 
-     | 2 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | 미해결 | [미해결/greedy_2](com/huni/sample/programmers/greedy/greedy_2.py) | |
-     | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/sample/programmers/greedy/greedy_3.py) | |
-     | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/sample/programmers/greedy/greedy_4.py) | |
+     | 1 | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) | 해결 | [해결 완료/greedy_1](com/huni/coding_site_problem/programmers/greedy/greedy_1.py) | | 
+     | 2 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | 미해결 | [미해결/greedy_2](com/huni/coding_site_problem/programmers/greedy/greedy_2.py) | |
+     | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
+     | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
 
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | 해결 | [해결/implement_pro_1](com/huni/sample/programmers/implement/implement_pro_1.py) | | 
-     | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/sample/programmers/implement/implement_pro_2.py) | [풀이](com/huni/sample/programmers/implement/implement_pro_2_example.py) | 
+     | 1 | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | 해결 | [해결/implement_pro_1](com/huni/coding_site_problem/programmers/implement/implement_pro_1.py) | | 
+     | 2 | [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059) | 미해결 | [미해결/implement_pro_2](com/huni/coding_site_problem/programmers/implement/implement_pro_2.py) | [풀이](com/huni/coding_site_problem/programmers/implement/implement_pro_2_example.py) | 
      
   3. DFS_BFS
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/sample/programmers/dfs_bfs/stack_queue_1.py) | |
-     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/sample/programmers/dfs_bfs/stack_queue_2.py) | | 
-     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/sample/programmers/dfs_bfs/dfs_bfs_1.py) | | 
-     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/sample/programmers/dfs_bfs/dfs_bfs_2.py) | | 
-     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/sample/programmers/dfs_bfs/stack_queue_3.py) | | 
-     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/sample/programmers/dfs_bfs/stack_queue_4.py) | |
+     | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_1.py) | |
+     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_2.py) | | 
+     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_1.py) | | 
+     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_2.py) | | 
+     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_3.py) | | 
+     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_4.py) | |
       
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | 해결 | [해결/sorting_1](com/huni/sample/programmers/sorting/sorting_1.py) | |
-     | 2 | [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748) | 해결 | [해결/sorting_2](com/huni/sample/programmers/sorting/sorting_2.py) | | 
-     | 3 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/sorting_3](com/huni/sample/programmers/sorting/sorting_3.py) | | 
-     | 4 | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | 미해결 | [미해결/sorting_4](com/huni/sample/programmers/sorting/sorting_4.py) | |
+     | 1 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889) | 해결 | [해결/sorting_1](com/huni/coding_site_problem/programmers/sorting/sorting_1.py) | |
+     | 2 | [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748) | 해결 | [해결/sorting_2](com/huni/coding_site_problem/programmers/sorting/sorting_2.py) | | 
+     | 3 | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | 미해결 | [미해결/sorting_3](com/huni/coding_site_problem/programmers/sorting/sorting_3.py) | | 
+     | 4 | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | 미해결 | [미해결/sorting_4](com/huni/coding_site_problem/programmers/sorting/sorting_4.py) | |
      
   5. Binary_Search
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [입국 심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | 미해결 | [미해결/binary_1](com/huni/sample/programmers/binary_search/binary_search_prog_1.py) | |
-     | 2 | [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) | 미해결 | [미해결/binary_2](com/huni/sample/programmers/binary_search/binary_search_prog_2.py) | | 
+     | 1 | [입국 심사](https://programmers.co.kr/learn/courses/30/lessons/43238) | 미해결 | [미해결/binary_1](com/huni/coding_site_problem/programmers/binary_search/binary_search_prog_1.py) | |
+     | 2 | [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) | 미해결 | [미해결/binary_2](com/huni/coding_site_problem/programmers/binary_search/binary_search_prog_2.py) | | 
      
   6. Dynamic_programming
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895) | 미해결 | [미해결/dynamic_1](com/huni/sample/programmers/dynamic_programming/prog_dynamic_1.py) | |
-     | 2 | [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) | 해결 | [해결/dynamic_2](com/huni/sample/programmers/dynamic_programming/prog_dynamic_2.py) | | 
+     | 1 | [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895) | 미해결 | [미해결/dynamic_1](com/huni/coding_site_problem/programmers/dynamic_programming/prog_dynamic_1.py) | |
+     | 2 | [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) | 해결 | [해결/dynamic_2](com/huni/coding_site_problem/programmers/dynamic_programming/prog_dynamic_2.py) | | 
 
     
 <hr>
@@ -141,32 +141,32 @@
   1. Greedy
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/sample/backjoon/greedy/greedy_back_1.py) | |
+     | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/coding_site_problem/backjoon/greedy/greedy_back_1.py) | |
     
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결/implement_1](com/huni/sample/backjoon/implement/implement_1.py)| |
-     | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결/implement_2](com/huni/sample/backjoon/implement/implement_2.py)| |
+     | 1 | [럭키 스트레이트](https://www.acmicpc.net/problem/18406) | 해결 | [해결/implement_1](com/huni/coding_site_problem/backjoon/implement/implement_1.py)| |
+     | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결/implement_2](com/huni/coding_site_problem/backjoon/implement/implement_2.py)| |
   
   3. DFS_BFS
   
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [국영수](https://www.acmicpc.net/problem/10825) | 해결 | [해결/sorting_back_1](com/huni/sample/backjoon/sorting/sorting_back_1.py)| |
-     | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/sample/backjoon/sorting/sorting_back_2.py)| |
-     | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/sample/backjoon/sorting/sorting_back_3.py)| |
+     | 1 | [국영수](https://www.acmicpc.net/problem/10825) | 해결 | [해결/sorting_back_1](com/huni/coding_site_problem/backjoon/sorting/sorting_back_1.py)| |
+     | 2 | [안테나](https://www.acmicpc.net/problem/18310) | 해결 | [해결/sorting_back_2](com/huni/coding_site_problem/backjoon/sorting/sorting_back_2.py)| |
+     | 2 | [카드 정렬하기](https://www.acmicpc.net/problem/1715) | 미해결 | [미해결/sorting_back_3](com/huni/coding_site_problem/backjoon/sorting/sorting_back_3.py)| |
        
   5. Binary_Search
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [공유기 설치](https://www.acmicpc.net/problem/2110) | 미해결 | [미해결/binary_back_1](com/huni/sample/backjoon/binary_search/binary_search_back_1.py) | | 
+     | 1 | [공유기 설치](https://www.acmicpc.net/problem/2110) | 미해결 | [미해결/binary_back_1](com/huni/coding_site_problem/backjoon/binary_search/binary_search_back_1.py) | | 
 
   6. Dynamic_programming
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [퇴사](https://www.acmicpc.net/problem/14501) | 미해결 | [해결/back_dynamic_1](com/huni/sample/backjoon/dynamic_programming/back_dynamic_1.py) | 재풀이 필요 |
-     | 2 | [병사 배치하기](https://www.acmicpc.net/problem/18353) | 미해결 | [미해결/binary_2](com/huni/sample/backjoon/dynamic_programming/back_dynamic_2.py) | | 
+     | 1 | [퇴사](https://www.acmicpc.net/problem/14501) | 미해결 | [해결/back_dynamic_1](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_1.py) | 재풀이 필요 |
+     | 2 | [병사 배치하기](https://www.acmicpc.net/problem/18353) | 미해결 | [미해결/binary_2](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_2.py) | | 
 
 

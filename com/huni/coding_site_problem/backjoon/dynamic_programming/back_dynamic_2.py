@@ -35,18 +35,49 @@
 # 5
 # 10 1 12 13 2 14
 
+########
+# 가장 긴 증가하는 부분 수열(LIS)
+# 알아야할게 너무 많다 ㅠㅠ
+########
 
+#1. dp 해결법
 n = int(input())
 
 data = list(map(int, input().split()))
+# 내림차순으로
+data.reverse()
 
-result = []
-for i in range(len(data) - 1):
-    for j in range(i, len(data)):
-        # if data[i] < data[j]:
-            # result.append()
-            break
-        # print(i,j)
+dp = [1] * (n+1)
 
-print(result)
-print(len(result))
+for i in range(1, n):
+    for j in range(i):
+        if data[i] > data[j]:
+            dp[i] = max(dp[i], dp[j] + 1)
+
+print(n - max(dp))
+
+#2. 이분탐색 - ???
+n = int(input())
+
+data = list(map(int, input().split()))
+# 내림차순으로
+data.reverse()
+
+# dp = [1] * n
+dp = [0]
+
+for i in range(n):
+    start = 0
+    end = len(dp) - 1
+    while start <= end:
+        mid = (start + end) // 2
+        if dp[mid] < data[i]:
+            low = mid + 1
+        else:
+            end = mid - 1
+        if start >= len(dp):
+            dp.append(data[i])
+        else:
+            dp[start] = data[i]
+
+print(len(dp) - 1)
