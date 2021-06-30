@@ -4,9 +4,19 @@
 
 [개념 정리]
 
+* [Stack_Queue_Recursive](com/huni/my_note/theory/stack_queue_recursive/stack_queue_recursive.md)
+* [Tree](com/huni/my_note/theory/tree/tree_theory.md)
 * [DFS_BFS](com/huni/my_note/theory/dfs_bfs/dfs_bfs_graph.md)
 * [Sorting](com/huni/my_note/theory/sorting/sorting_ex.md)
 * [Binary_Search](com/huni/my_note/theory/binary_search/binary_search.md)
+* [Dynamic_Programming](com/huni/my_note/theory/dynamic_programming/dynamic_programming.md)
+* [Longest_Increasing_Subsequence](com/huni/my_note/theory/Longest_Increasing_Subsequence/Lis.md)
+
+<hr>
+
+[주요 라이브러리]
+
+* [Bisect](com/huni/my_note/knowledge/library/bisect/bisect.md)
 
 <hr>
 
