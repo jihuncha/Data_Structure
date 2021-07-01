@@ -14,12 +14,6 @@
 
 <hr>
 
-[주요 라이브러리]
-
-* [Bisect](com/huni/my_note/knowledge/library/bisect/bisect.md)
-
-<hr>
-
 [Python]
 
 * 기본 Library
