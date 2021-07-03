@@ -137,7 +137,12 @@
      | --- | --- | --- | --- | --- |
      | 1 | [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895) | 미해결 | [미해결/dynamic_1](com/huni/coding_site_problem/programmers/dynamic_programming/prog_dynamic_1.py) | |
      | 2 | [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) | 해결 | [해결/dynamic_2](com/huni/coding_site_problem/programmers/dynamic_programming/prog_dynamic_2.py) | | 
-
+    
+  7. Hash
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) | 미해결 | [미해결/hash_1](com/huni/coding_site_problem/programmers/hash/hash_1.py) | |
+     
     
 <hr>
 
