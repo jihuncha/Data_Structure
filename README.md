@@ -142,8 +142,10 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) | 미해결 | [미해결/hash_1](com/huni/coding_site_problem/programmers/hash/hash_1.py) | |
-     
+     | 2 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | 해결 | [해결/hash_2](com/huni/coding_site_problem/programmers/hash/hash_2.py) | |
+     | 3 | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | 미해결 | [해결/hash_3](com/huni/coding_site_problem/programmers/hash/hash_3.py) | |
     
+
 <hr>
 
 * 백준
