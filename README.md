@@ -19,6 +19,7 @@
 * 기본 Library
     * [built_in_function](com/huni/my_note/knowledge/library/built_in_function/built_in.md)
     * [Bisect](com/huni/my_note/knowledge/library/bisect/bisect.md)
+    * [Heap](com/huni/my_note/knowledge/library/heap/heap.md)
 
 <hr>
 
