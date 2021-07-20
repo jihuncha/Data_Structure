@@ -97,6 +97,12 @@
     * 미래 도시 : ( [실전9-2](com/huni/dongbins/chap09_shortest_path/shortest_path_2.py)) 
     * 전보 : ( [실전9-3](com/huni/dongbins/chap09_shortest_path/shortest_path_3.py)) # 재풀이 필요!!
     
+#### 9장 그래프 이론
+* 실전
+    * 팀 결성 : ( [실전9-2](com/huni/dongbins/chap10_graph/graph_02.py)) 
+    * 도시 분할 계획 : ( [실전9-3](com/huni/dongbins/chap10_graph/graph_03.py))  # 재풀이 필요.
+    * 커리큘럼 : ( [실전9-4](com/huni/dongbins/chap10_graph/graph_04.py))  # 뭐라는지도모르겠다 ㅋㅋㅋㅋ
+    
 <hr>
 
 [각종 사이트 문제 연습]
