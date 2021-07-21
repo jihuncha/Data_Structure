@@ -1,5 +1,7 @@
 # 행성 터널
 
+# https://www.acmicpc.net/problem/2887
+
 # 문제
 # 때는 2040년, 이민혁은 우주에 자신만의 왕국을 만들었다. 왕국은 N개의 행성으로 이루어져 있다. 민혁이는 이 행성을 효율적으로 지배하기 위해서 행성을 연결하는 터널을 만들려고 한다.
 #
@@ -28,4 +30,64 @@
 
 #####
 # 최소 신장 트리로 풀어야할 것 같은데..
-# 
+# 크루스칼
+
+##### 풀이..
+# 터널의 비용이 min(x좌표,y좌표,z좌표) 이므로
+# 고려할 간선의 갯수를 1개 줄일수 있다 (5개이면 차이는 4개이므로)
+# png파일 참고..뭔소리여
+
+
+def find_parent(parent, x):
+    if parent[x] != x:
+        parent[x] = find_parent(parent, parent[x])
+    return parent[x]
+
+def union_parent(parent, a, b):
+    a = find_parent(parent,a)
+    b = find_parent(parent,b)
+    if a < b:
+        parent[b] = a
+    else:
+        parent[a] = b
+
+n = int(input())
+parent = [0] * (n + 1)
+
+edges = []
+result = 0
+
+for i in range(1, n+1):
+    parent[i] = i
+
+x = []
+y = []
+z = []
+
+# 모든 노드의 좌표값 받기
+for i in range(1, n+1):
+    data = list(map(int, input().split()))
+    x.append((data[0], i))
+    y.append((data[1], i))
+    z.append((data[2], i))
+
+x.sort()
+y.sort()
+z.sort()
+
+for i in range(n-1):
+    edges.append((x[i+1][0] - x[i][0], x[i][1], x[i+1][1]))
+    edges.append((y[i+1][0] - y[i][0], y[i][1], y[i+1][1]))
+    edges.append((z[i+1][0] - z[i][0], z[i][1], z[i+1][1]))
+
+edges.sort()
+
+print(edges)
+
+for edge in edges:
+    cost,a,b = edge
+    if find_parent(parent, a) != find_parent(parent, b):
+        union_parent(parent,a,b)
+        result += cost
+
+print(result)
