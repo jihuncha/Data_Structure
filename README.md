@@ -38,6 +38,8 @@
 | 3 | [로그파일 재정렬](https://leetcode.com/problems/reorder-data-in-log-files/) | ★ | 6장. 문자열 조작 | [reorder_log_files.py](com/huni/algorithm_interview/chap06_string_manipulation/reorder_log_files.py)|
 | 4 | [가장 흔한 단어](https://leetcode.com/problems/most-common-word/) | ★ | 6장. 문자열 조작 | [most_common_word.py](com/huni/algorithm_interview/chap06_string_manipulation/most_common_word.py)|
 | 5 | [그룹 애너그램](https://leetcode.com/problems/group-anagrams/) | ★ | 6장. 문자열 조작 | [group_anagrams.py](com/huni/algorithm_interview/chap06_string_manipulation/group_anagrams.py)|
+| 6 | [가장 긴 팰린드롬](https://leetcode.com/problems/longest-palindromic-substring/) | ★★ | 6장. 문자열 조작 | [longest_palindromic_substring.py](com/huni/algorithm_interview/chap06_string_manipulation/longest_palindromic_substring.py)|
+| 7 | [두 수의 합](https://leetcode.com/problems/two-sum/) | ★ | 7장. 배열 | [two_sum.py](com/huni/algorithm_interview/chap07_array/two_sum.py)|
 | 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12_graph/numbers_of_islands.py)|
 | 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Maximum_Depth_of_Binary_Tree.py)|
 | 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [Diameter of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Diameter_of_Binary_Tree.py)|
