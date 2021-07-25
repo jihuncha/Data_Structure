@@ -40,6 +40,11 @@
 | 5 | [그룹 애너그램](https://leetcode.com/problems/group-anagrams/) | ★ | 6장. 문자열 조작 | [group_anagrams.py](com/huni/algorithm_interview/chap06_string_manipulation/group_anagrams.py)|
 | 6 | [가장 긴 팰린드롬](https://leetcode.com/problems/longest-palindromic-substring/) | ★★ | 6장. 문자열 조작 | [longest_palindromic_substring.py](com/huni/algorithm_interview/chap06_string_manipulation/longest_palindromic_substring.py)|
 | 7 | [두 수의 합](https://leetcode.com/problems/two-sum/) | ★ | 7장. 배열 | [two_sum.py](com/huni/algorithm_interview/chap07_array/two_sum.py)|
+| 8 | [빗물 트래핑](https://leetcode.com/problems/trapping-rain-water/) | ★★★ | 7장. 배열 | [trapping_rain_water.py](com/huni/algorithm_interview/chap07_array/trapping_rain_water.py)|
+| 9 | [세 수의 합](https://leetcode.com/problems/3sum/) | ★★ | 7장. 배열 | [three_sum.py](com/huni/algorithm_interview/chap07_array/three_sum.py)|
+| 10 | [배열 파티션 1](https://leetcode.com/problems/array-partition-i/) | ★ | 7장. 배열 | [array_partition_i.py](com/huni/algorithm_interview/chap07_array/array_partition_i.py)|
+| 11 | [자기 자신을 제외한 배열의 곱](https://leetcode.com/problems/product-of-array-except-self/) | ★★ | 7장. 배열 | [product_of_array_except_self.py](com/huni/algorithm_interview/chap07_array/product_of_array_except_self.py)|
+| 12 | [주식을 사고 팔기 좋은 시점](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | ★ | 7장. 배열 | [best_time_to_buy_and_sell_stock.py](com/huni/algorithm_interview/chap07_array/best_time_to_buy_and_sell_stock.py)|
 | 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbers_of_islands.py](com/huni/algorithm_interview/chap12_graph/numbers_of_islands.py)|
 | 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Maximum_Depth_of_Binary_Tree.py)|
 | 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [Diameter of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Diameter_of_Binary_Tree.py)|
