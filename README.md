@@ -218,12 +218,17 @@
 
 [기출 문제]
 
-1. 카카오
-    1. KAKAO_2021
-     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
-     | --- | --- | --- | --- | --- |
-     | 1 | [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410) | 해결 | [해결 완료/2021_kakao_1](com/huni/nekalakubae/kakao/kakao_2021/first_new_id_recommend.py) | | 
-     | 2 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2021_kakao_2](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
-     | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
-     | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
+ 카카오
+   1. KAKAO_2021
+   
+   | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+   | --- | --- | --- | --- | --- |
+   | 1 | [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410) | 해결 | [해결 완료/2021_kakao_1](com/huni/nekalakubae/kakao/kakao_2021/first_new_id_recommend.py) | | 
+   | 2 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2021_kakao_2](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
+   | 3 | [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) | 미해결 | [미해결/2021_kakao_3](com/huni/nekalakubae/kakao/kakao_2021/third_rank_search.py) | |
+   | 4 | [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413) | 미해결 | [미해결/2021_kakao_4](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
+   | 5 | [광고 삽입](https://programmers.co.kr/learn/courses/30/lessons/72414) | 미해결 | [미해결/2021_kakao_5](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
+   | 6 | [카드 짝 맞추기](https://programmers.co.kr/learn/courses/30/lessons/72415) | 미해결 | [미해결/2021_kakao_6](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
+   | 7 | [매출 하락 최소화](https://programmers.co.kr/learn/courses/30/lessons/72416) | 미해결 | [미해결/2021_kakao_7](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
+
 
