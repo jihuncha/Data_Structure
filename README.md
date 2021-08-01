@@ -214,3 +214,16 @@
      | --- | --- | --- | --- | --- |
      | 1 | [행성 터널](https://www.acmicpc.net/problem/2887) | 이해결 | [미해결/back_2887](com/huni/coding_site_problem/backjoon/graph_dongbins/back_2887.py) | 어려웡 |
     
+<hr>
+
+[기출 문제]
+
+1. 카카오
+    1. KAKAO_2021
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410) | 해결 | [해결 완료/2021_kakao_1](com/huni/nekalakubae/kakao/kakao_2021/first_new_id_recommend.py) | | 
+     | 2 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2021_kakao_2](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
+     | 3 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | 미해결 | [미해결/greedy_3](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
+     | 4 | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) | 해결 | [해결/greedy_4](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
+
