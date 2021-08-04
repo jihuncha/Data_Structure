@@ -5,7 +5,8 @@
 # 문제 설명
 # [본 문제는 정확성과 효율성 테스트 각각 점수가 있는 문제입니다.]
 #
-# 카카오는 하반기 경력 개발자 공개채용을 진행 중에 있으며 현재 지원서 접수와 코딩테스트가 종료되었습니다. 이번 채용에서 지원자는 지원서 작성 시 아래와 같이 4가지 항목을 반드시 선택하도록 하였습니다.
+# 카카오는 하반기 경력 개발자 공개채용을 진행 중에 있으며 현재 지원서 접수와 코딩테스트가 종료되었습니다.
+# 이번 채용에서 지원자는 지원서 작성 시 아래와 같이 4가지 항목을 반드시 선택하도록 하였습니다.
 #
 # 코딩테스트 참여 개발언어 항목에 cpp, java, python 중 하나를 선택해야 합니다.
 # 지원 직군 항목에 backend와 frontend 중 하나를 선택해야 합니다.
@@ -76,3 +77,261 @@
 # "- and backend and senior and - 150" : backend 직군을 선택했고, senior 경력인 지원자 중 코딩테스트 점수를 150점 이상 받은 지원자는 1명 입니다.
 # "- and - and - and chicken 100" : 소울푸드로 chicken을 선택한 지원자 중 코딩테스트 점수를 100점 이상을 받은 지원자는 2명 입니다.
 # "- and - and - and - 150" : 코딩테스트 점수를 150점 이상 받은 지원자는 4명 입니다.
+
+import bisect
+
+input_str = ["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"]
+query_str = ["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"]
+
+def solution(info, query):
+    answer = []
+
+    db = {}
+
+    info.sort(key=lambda x: int(x.split(' ')[-1]))
+
+    for check in info:
+        temp_str = check.split(' ')[:-1]
+        print(temp_str)
+
+    # temp_info = []
+    # temp_num_info = []
+    # info.sort(key=lambda x: int(x.split(' ')[-1]))
+    #
+    # for check in info:
+    #     temp_list = list(map(str, check.split()))
+    #     temp_info.append(temp_list)
+    #     temp_num_info.append(int(temp_list[-1]))
+    #
+    # # temp_info.sort(key=lambda x : int(x[0]))
+    # # print(temp_info)
+    # # temp_num_info.sort()
+    # # print(temp_num_info)
+    #
+    # for i in query:
+    #     count = 0
+    #     change_str = i.replace(' and ', ' ')
+    #     temp_query = list(map(str, change_str.split(' ')))
+    #     # temp_query.reverse()
+    #     # print(temp_query)
+    #     check = int(temp_query[-1])
+    #     index = bisect.bisect_left(temp_num_info, check)
+    #     # print(check)
+    #     # print(index)
+    #     # print(temp_info[index:])
+    #     for j in temp_info[index:]:
+    #         if (j[0] == temp_query[0] or temp_query[0] == '-') and (j[1] == temp_query[1] or temp_query[1] == '-') \
+    #             and (j[2] == temp_query[2] or temp_query[2] == '-') and (j[3] == temp_query[3] or temp_query[3] == '-'):
+    #             count +=1
+    #     answer.append(count)
+
+    return answer
+
+# print(solution(input_str, query_str))
+
+
+
+
+
+##############
+# 1차 시기
+
+# def solution(info, query):
+#     answer = []
+
+#     temp_info = []
+#     temp_num_info = []
+
+#     for check in info:
+#         temp_list = list(map(str, check.split()))
+#         temp_list.reverse()
+#         temp_info.append(temp_list)
+#         temp_num_info.append(int(temp_list[0]))
+
+#     temp_info.sort(key=lambda x : int(x[0]))
+#     # print(temp_info)
+#     temp_num_info.sort()
+#     # print(temp_num_info)
+
+    # for i in query:
+    #     count = 0
+    #     change_str = i.replace(' and ', ' ')
+    #     temp_query = list(map(str, change_str.split(' ')))
+    #     temp_query.reverse()
+    #     # print(temp_query)
+    #     check = int(temp_query[0])
+    #     index = bisect.bisect_left(temp_num_info, check)
+    #     # print(index)
+    #     # print(temp_info[index:])
+    #     for j in temp_info[index:]:
+    #         if (j[1] == temp_query[1] or temp_query[1] == '-') and (j[2] == temp_query[2] or temp_query[2] == '-') \
+    #             and (j[3] == temp_query[3] or temp_query[3] == '-') and (j[4] == temp_query[4] or temp_query[4] == '-'):
+    #             count +=1
+    #     answer.append(count)
+
+#     return answer
+
+# 테스트 1 〉	통과 (0.10ms, 10.4MB)
+# 테스트 2 〉	통과 (0.08ms, 10.4MB)
+# 테스트 3 〉	통과 (0.39ms, 10.5MB)
+# 테스트 4 〉	통과 (7.35ms, 10.5MB)
+# 테스트 5 〉	통과 (11.47ms, 10.5MB)
+# 테스트 6 〉	통과 (25.38ms, 10.7MB)
+# 테스트 7 〉	통과 (12.94ms, 10.6MB)
+# 테스트 8 〉	통과 (68.65ms, 13MB)
+# 테스트 9 〉	통과 (61.07ms, 13.3MB)
+# 테스트 10 〉	통과 (71.29ms, 13.3MB)
+# 테스트 11 〉	통과 (21.36ms, 10.5MB)
+# 테스트 12 〉	통과 (22.77ms, 10.6MB)
+# 테스트 13 〉	통과 (12.00ms, 10.6MB)
+# 테스트 14 〉	통과 (46.14ms, 11.6MB)
+# 테스트 15 〉	통과 (59.71ms, 11.6MB)
+# 테스트 16 〉	통과 (11.20ms, 10.5MB)
+# 테스트 17 〉	통과 (26.10ms, 10.7MB)
+# 테스트 18 〉	통과 (49.15ms, 11.6MB)
+# 효율성  테스트
+# 테스트 1 〉	실패 (시간 초과)
+# 테스트 2 〉	실패 (시간 초과)
+# 테스트 3 〉	실패 (시간 초과)
+# 테스트 4 〉	실패 (시간 초과)
+
+
+######### 2차 시기
+# 이게 최선인거같은데..ㅠ
+
+# def solution(info, query):
+#     answer = []
+#
+#     temp_info = []
+#     temp_num_info = []
+#     info.sort(key=lambda x: int(x.split(' ')[-1]))
+#
+#     for check in info:
+#         temp_list = list(map(str, check.split()))
+#         temp_info.append(temp_list)
+#         temp_num_info.append(int(temp_list[-1]))
+#
+#     # temp_info.sort(key=lambda x : int(x[0]))
+#     # print(temp_info)
+#     # temp_num_info.sort()
+#     # print(temp_num_info)
+#
+#     for i in query:
+#         count = 0
+#         change_str = i.replace(' and ', ' ')
+#         temp_query = list(map(str, change_str.split(' ')))
+#         # temp_query.reverse()
+#         # print(temp_query)
+#         check = int(temp_query[-1])
+#         index = bisect.bisect_left(temp_num_info, check)
+#         # print(check)
+#         # print(index)
+#         # print(temp_info[index:])
+#         for j in temp_info[index:]:
+#             if (j[0] == temp_query[0] or temp_query[0] == '-') and (j[1] == temp_query[1] or temp_query[1] == '-') \
+#                 and (j[2] == temp_query[2] or temp_query[2] == '-') and (j[3] == temp_query[3] or temp_query[3] == '-'):
+#                 count +=1
+#         answer.append(count)
+#
+#     return answer
+#
+# print(solution(input_str, query_str))
+
+# 테스트 1 〉	통과 (0.09ms, 10.5MB)
+# 테스트 2 〉	통과 (0.09ms, 10.5MB)
+# 테스트 3 〉	통과 (0.36ms, 10.4MB)
+# 테스트 4 〉	통과 (3.35ms, 10.6MB)
+# 테스트 5 〉	통과 (9.85ms, 10.5MB)
+# 테스트 6 〉	통과 (20.05ms, 10.7MB)
+# 테스트 7 〉	통과 (11.01ms, 10.6MB)
+# 테스트 8 〉	통과 (47.87ms, 13MB)
+# 테스트 9 〉	통과 (46.93ms, 13.1MB)
+# 테스트 10 〉	통과 (55.17ms, 13MB)
+# 테스트 11 〉	통과 (9.38ms, 10.6MB)
+# 테스트 12 〉	통과 (19.09ms, 10.5MB)
+# 테스트 13 〉	통과 (10.88ms, 10.6MB)
+# 테스트 14 〉	통과 (40.09ms, 11.6MB)
+# 테스트 15 〉	통과 (43.19ms, 11.6MB)
+# 테스트 16 〉	통과 (9.88ms, 10.5MB)
+# 테스트 17 〉	통과 (20.30ms, 10.5MB)
+# 테스트 18 〉	통과 (40.39ms, 11.6MB)
+# 효율성  테스트
+# 테스트 1 〉	실패 (시간 초과)
+# 테스트 2 〉	실패 (시간 초과)
+# 테스트 3 〉	실패 (시간 초과)
+# 테스트 4 〉	실패 (시간 초과)
+
+from itertools import combinations
+
+
+### 풀이
+def solution(info, query):
+    answer = []
+    db = {}
+    for i in info:  # info에 대해 반복
+        temp = i.split()
+        conditions = temp[:-1]  # 조건들만 모으고, 점수 따로
+        score = int(temp[-1])
+        for n in range(5):  # 조건들에 대해 조합을 이용해서
+            combi = list(combinations(range(4), n))
+            print(combi)
+            for c in combi:
+                t_c = conditions.copy()
+                print("t_c ", t_c)
+                for v in c:  # '-'를 포함한 새로운 조건을 만들어냄.
+                    t_c[v] = '-'
+                changed_t_c = '/'.join(t_c)
+                if changed_t_c in db:  # 모든 조건의 경우에 수에 대해 딕셔너리
+                    db[changed_t_c].append(score)
+                else:
+                    db[changed_t_c] = [score]
+
+    for value in db.values():  # 딕셔너리 내 모든 값 정렬
+        value.sort()
+    print(db)
+
+    for q in query:  # query의 모든 조건에 대해서
+        qry = [i for i in q.split() if i != 'and']
+        qry_cnd = '/'.join(qry[:-1])
+        qry_score = int(qry[-1])
+        if qry_cnd in db:  # 딕셔너리 내에 값이 존재한다면,
+            data = db[qry_cnd]
+            if len(data) > 0:
+                start, end = 0, len(data)  # lower bound 알고리즘 통해 인덱스 찾고,
+                while start != end and start != len(data):
+                    if data[(start + end) // 2] >= qry_score:
+                        end = (start + end) // 2
+                    else:
+                        start = (start + end) // 2 + 1
+                answer.append(len(data) - start)  # 해당 인덱스부터 끝까지의 갯수가 정답
+        else:
+            answer.append(0)
+
+    return answer
+
+print(solution(input_str, query_str))
+
+## 속도
+# 테스트 1 〉	통과 (0.50ms, 10.5MB)
+# 테스트 2 〉	통과 (0.46ms, 10.5MB)
+# 테스트 3 〉	통과 (0.53ms, 10.5MB)
+# 테스트 4 〉	통과 (1.97ms, 10.5MB)
+# 테스트 5 〉	통과 (5.07ms, 10.5MB)
+# 테스트 6 〉	통과 (6.85ms, 10.6MB)
+# 테스트 7 〉	통과 (7.57ms, 10.7MB)
+# 테스트 8 〉	통과 (57.75ms, 11.5MB)
+# 테스트 9 〉	통과 (84.00ms, 11.5MB)
+# 테스트 10 〉	통과 (55.57ms, 11.7MB)
+# 테스트 11 〉	통과 (4.37ms, 10.6MB)
+# 테스트 12 〉	통과 (8.54ms, 10.6MB)
+# 테스트 13 〉	통과 (4.71ms, 10.8MB)
+# 테스트 14 〉	통과 (30.41ms, 10.9MB)
+# 테스트 15 〉	통과 (33.57ms, 11MB)
+# 테스트 16 〉	통과 (5.35ms, 10.6MB)
+# 테스트 17 〉	통과 (11.86ms, 10.6MB)
+# 테스트 18 〉	통과 (28.93ms, 11MB)
+# 효율성  테스트
+# 테스트 1 〉	통과 (1060.06ms, 42MB)
+# 테스트 2 〉	통과 (1038.56ms, 42.4MB)
+# 테스트 3 〉	통과 (1124.74ms, 42.4MB)
+# 테스트 4 〉	통과 (1127.51ms, 42.1MB)
