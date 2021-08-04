@@ -50,7 +50,7 @@
 # n	s	a	b	fares	result
 # 6	4	6	2	[[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]]	82
 # 7	3	4	1	[[5, 7, 9], [4, 6, 4], [3, 6, 1], [3, 2, 3], [2, 1, 6]]	14
-# 6	4	5	6	[[2,6,6], [6,3,7], [4,6,7], [6,5,11], [2,5,12], [5,3,20], [2,4,8], [4,3,9]]
+# 6	4	5	6	[[2,6,6], [6,3,7], [4,6,7], [6,5,11], [2,5,12], [5,3,20], [2,4,8], [4,3,9]] 18
 
 # 입출력 예 #1
 # 문제 예시와 같습니다.
@@ -69,33 +69,107 @@
 
 # 다익스트라?? 플로이드??
 
+import heapq
 def solution(n, s, a, b, fares):
-    answer = 0
-    # Inf = int(1e9)
-    #
-    # graph = [[Inf] * (n+1) for _ in range(n + 1)]
-    # # print(graph)
-    #
-    # for k in range(1,n+1):
-    #     for l in range(1,n+1):
-    #         if k == l:
-    #             graph[k][l] = 0
+    # graph = [[] for _ in range(n + 1)]
     #
     # for i in fares:
     #     a,b,c = i
-    #     graph[a][b] = c
-    #     graph[b][a] = c
+    #     graph[a].append((b,c))
+    #     graph[b].append((a,c))
     # print(graph)
     #
-    # for k in range(1, n+1):
-    #     for a in range(1, n+1):
-    #         for b in range(1, n+1):
-    #             graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+    # def dijkstra(start, end):
+    #     distance = [INF] * (n + 1)
+    #     distance[start] = 0
+    #     q = []
+    #     heapq.heappush(q, (0, start))
     #
+    #     while q:
+    #         dis, current = heapq.heappop(q)
+    #         # print(dis,current)
+    #         if distance[current] < dis:
+    #             continue
+    #
+    #         for check in graph[current]:
+    #             cost = check[1] + dis
+    #             if cost < distance[check[0]]:
+    #                 distance[check[0]] = cost
+    #                 heapq.heappush(q, (cost,check[0]))
+    #     return distance[end]
+    #
+    # for i in range(1, n+1):
+    #     answer = min(answer, dijkstra(s, i) + dijkstra(i, a) + dijkstra(i, b))
+
+    INF = int(1e9)
+
+    graph = [[INF] * (n + 1) for _ in range(n + 1)]
     # print(graph)
+
+    for k in range(1,n+1):
+        graph[k][k] = 0
+
+    for i in fares:
+        x,y,z = i
+        graph[x][y] = graph[y][x] = z
+    # print(graph)
+
+    for k in range(1, n+1):
+        for i in range(1, n+1):
+            for j in range(1, n+1):
+                if graph[i][j] > graph[i][k] + graph[k][j]:
+                    graph[i][j] = graph[i][k] + graph[k][j]
+                # graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+
+    print(graph)
     # print(graph[s][a] + graph[s][b])
 
+    answer = INF
+    for k in range(1, n+1):
+        print(s,k,a,b)
+        answer = min(answer, graph[s][k] + graph[k][a] + graph[k][b])
+        # print(answer)
+
     return answer
+
+print(solution(6,4,6,2,[[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]]))
+
+# 플로이드-와샬
+from math import inf
+
+def solution(n, s, a, b, fares):
+    # 0부터 시작하는 인덱스
+    s, a, b = s - 1, a - 1, b - 1
+
+    # inf 로 초기화된 거리행렬
+    # 자기 자신으로 가는 간선 가중치는 0
+    graph = [[inf] * n for _ in range(n)]
+    for i in range(n):
+        graph[i][i] = 0
+
+    # 거리행렬에 주어진 비용 넣기
+    for fare in fares:
+        u, v, w = fare
+        graph[u - 1][v - 1] = graph[v - 1][u - 1] = w
+
+    # 플로이드-와샬
+    for k in range(n):          # 1. 모든 노드를 중간점(경로)으로 가정하면서
+        for i in range(n):      # 2. 거리행렬을 순회
+            for j in range(n):  # 3. 현재 거리행렬에 저장된 거리가 k를 거쳐가는 거리보다 멀면 갱신
+                if graph[i][j] > graph[i][k] + graph[k][j]:
+                    graph[i][j] = graph[i][k] + graph[k][j]
+                # graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j])
+                # 시간 거의 두 배 걸림..
+    print(graph)
+
+    # 출발점을 기준으로 어떤 지점 k를 거쳐 각각 a와 b로 가는 최소 비용을 탐색
+    ans = inf
+    for k in range(n):
+        print(s,k,a,b)
+        ans = min(ans, graph[s][k] + graph[k][a] + graph[k][b])
+        # print(ans)
+
+    return ans
 
 print(solution(6,4,6,2,[[4, 1, 10], [3, 5, 24], [5, 6, 2], [3, 1, 41], [5, 1, 24], [4, 6, 50], [2, 4, 66], [2, 3, 22], [1, 6, 25]]))
 # print(solution(7,3,4,1,[[5, 7, 9], [4, 6, 4], [3, 6, 1], [3, 2, 3], [2, 1, 6]]))
