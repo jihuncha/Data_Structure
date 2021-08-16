@@ -1,4 +1,4 @@
-# https://www.welcomekakao.com/learn/courses/30/lessons/42889
+# https://programmers.co.kr/learn/courses/30/lessons/42889
 
 # 실패율
 
@@ -49,6 +49,110 @@
 #
 # [4,1,2,3]
 
+import bisect
 def solution(N, stages):
     answer = []
-    return answer
+
+    stages.sort()
+
+    temp_list = []
+    temp_num = 0
+
+    for i in range(N):
+        count = bisect.bisect_right(stages, i + 1) - bisect.bisect_left(stages, i + 1)
+        # print(count)
+        if len(stages) - temp_num > 0 and count != 0:
+            temp_list.append([count / (len(stages) - temp_num), i + 1])
+        elif count == 0:
+            temp_list.append([0, i + 1])
+        else:
+            temp_list.append([1, i + 1])
+        temp_num += count
+
+    answer = sorted(temp_list, key= lambda x: (x[0],-x[1]), reverse=True)
+
+    result = []
+    for i in answer:
+        result.append(i[1])
+
+    return result
+print(solution(5,	[2, 1, 2, 6, 2, 4, 3, 3]))
+print(solution(4, 	[4,4,4,4,4]))
+print(solution(1, [1]))
+# print(solution(5,  [2,1,2,4,2,4,3,3]))
+
+# 테스트 1 〉	통과 (0.02ms, 10.3MB)
+# 테스트 2 〉	통과 (0.09ms, 10.2MB)
+# 테스트 3 〉	통과 (1.84ms, 10.4MB)
+# 테스트 4 〉	통과 (10.93ms, 11.3MB)
+# 테스트 5 〉	통과 (34.62ms, 15.8MB)
+# 테스트 6 〉	통과 (0.35ms, 10.2MB)
+# 테스트 7 〉	통과 (1.20ms, 10.4MB)
+# 테스트 8 〉	통과 (10.48ms, 11.3MB)
+# 테스트 9 〉	통과 (28.83ms, 15.6MB)
+# 테스트 10 〉	통과 (11.80ms, 11.3MB)
+# 테스트 11 〉	통과 (9.67ms, 11.3MB)
+# 테스트 12 〉	통과 (13.31ms, 12MB)
+# 테스트 13 〉	통과 (15.85ms, 12.1MB)
+# 테스트 14 〉	통과 (0.04ms, 10.3MB)
+# 테스트 15 〉	통과 (8.98ms, 10.7MB)
+# 테스트 16 〉	통과 (3.21ms, 10.4MB)
+# 테스트 17 〉	통과 (3.41ms, 10.7MB)
+# 테스트 18 〉	통과 (2.46ms, 10.4MB)
+# 테스트 19 〉	통과 (0.45ms, 10.3MB)
+# 테스트 20 〉	통과 (2.75ms, 10.4MB)
+# 테스트 21 〉	통과 (5.40ms, 11.1MB)
+# 테스트 22 〉	통과 (6.89ms, 18.4MB)
+# 테스트 23 〉	통과 (12.27ms, 12.3MB)
+# 테스트 24 〉	통과 (18.30ms, 12.3MB)
+# 테스트 25 〉	통과 (0.02ms, 10.3MB)
+# 테스트 26 〉	통과 (0.01ms, 10.3MB)
+# 테스트 27 〉	통과 (0.01ms, 10.3MB)
+
+
+
+
+# import collections
+# def solution(N, stages):
+#     answer = []
+#
+#     # counter check
+#     temp = dict(collections.Counter(sorted(stages)))
+#
+#     fail_list = []
+#
+#     # N만큼 for문
+#     for i in range(1, N+1):
+#         # print(i, " - ", sum(1 for x in stages if x >= i))
+#         if i in temp:
+#             fail_list.append([i, temp[i]/sum(1 for x in stages if x >= i)])
+#         else:
+#             fail_list.append([i,0])
+#
+#     # print(sorted(fail_list, key=lambda x: -x[1]))
+#
+#     fail_list.sort(key=lambda x: -x[1])
+#
+#     answer = [x[0] for x in fail_list]
+#
+#     # fail_list = []
+#     # stages.sort()
+#     #
+#     # for i in stages:
+#     #     fail_list
+#
+#     # print(collections.Counter(sorted(stages)))
+#     #
+#     # dic = dict(collections.Counter(sorted(stages)))
+#     # print(dic)
+#     #
+#     # temp_list = []
+#     #
+#     # for i in range(1,N+1):
+#     #     if i in dic:
+#     #         temp_list.append(dic[i])
+#     #     else:
+#     #         temp_list.append(0)
+#     # print(temp_list)
+#
+#     return answer

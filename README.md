@@ -237,8 +237,8 @@
    | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
    | --- | --- | --- | --- | --- |
    | 1 | [오픈 채팅방](https://www.welcomekakao.com/learn/courses/30/lessons/42888) | 해결 | [해결 완료/2019_kakao_1](com/huni/nekalakubae/kakao/kakao_2019/one_open_chat_room.py) | | 
-   | 2 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2021_kakao_2](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
-   | 3 | [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) | 미해결 | [미해결/2021_kakao_3](com/huni/nekalakubae/kakao/kakao_2021/third_rank_search.py) | |
+   | 2 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2019_kakao_2](com/huni/nekalakubae/kakao/kakao_2019/two_fail_check.py) | |
+   | 3 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | 미해결 | [미해결/2021_kakao_3](com/huni/nekalakubae/kakao/kakao_2019/three_candidate_key.py) | |
    | 4 | [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413) | 미해결 | [미해결/2021_kakao_4](com/huni/nekalakubae/kakao/kakao_2021/fourth_taxi.py) | |
    | 5 | [광고 삽입](https://programmers.co.kr/learn/courses/30/lessons/72414) | 미해결 | [미해결/2021_kakao_5](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
    | 6 | [카드 짝 맞추기](https://programmers.co.kr/learn/courses/30/lessons/72415) | 미해결 | [미해결/2021_kakao_6](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
