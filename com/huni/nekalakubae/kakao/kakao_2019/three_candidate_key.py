@@ -49,9 +49,56 @@ def solution(relation):
     dic = {}
     result_comlumn_temp = []
 
+    #컬럼 갯수
+    count_column = [x for x in range(len(relation[0]))]
 
+    print(count_column)
 
+    #숫자로 combination 작성 -> 모든 행의 조합은 필요없다 (-1 추가)
+    com_list = []
+    for i in range(len(count_column) - 1):
+        com_list += list(itertools.combinations(count_column, i+1))
+    print(com_list)
 
+    result_list = []
+    for i in com_list:
+        key_candidate = True
+        temp_list = []
+        str_temp = ''
+        for check in relation:
+            for j in i:
+                str_temp += check[j] + '/'
+            if str_temp in temp_list:
+                key_candidate = False
+                break
+            temp_list.append(str_temp)
+            str_temp = ''
+        if key_candidate:
+            str_result = ''.join([str(s) for s in i])
+            print(str_result)
+            if len(result_list) == 0:
+                result_list.append(str_result)
+            temp_check = False
+            for i in result_list:
+                if i in str_result:
+                    temp_check = True
+                    break
+                if not temp_check:
+                    result_list.append(str_result)
+
+            # if any(result_list, str_result):
+            #     print("test")
+            # print(temp_list)
+    print(result_list)
+
+    # real_list = []
+    # for i in result_list:
+    #     change_str = '/'.join([str(k) for k in i])
+    #     print(change_str)
+    #     if len(real_list) == 0:
+    #         real_list.append(change_str)
+    #
+    # print(real_list)
     return answer
 
 print(solution([["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]))
@@ -90,7 +137,7 @@ def solution(relation):
             key = ""
             for j in combi_str_list[0]:
                 key += r[int(j)]
-            print(key)
+            # print(key)
 
             if key in candidate_key:
                 is_candidate_key = False
@@ -103,14 +150,15 @@ def solution(relation):
             continue
 
         str_list = list(combi_str_list[0])
-        print(str_list)
+        # print(str_list)
 
         combi_str_list = [s for s in combi_str_list if any(str not in s for str in str_list)]
+        # print(combi_str_list)
 
         answer += 1
 
     return answer
 
 
-print(solution([["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]))
+# print(solution([["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]))
 
