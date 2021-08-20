@@ -42,30 +42,34 @@
 ## dfs..?
 # 조합만드는거를 해결못햇음..구현이 아직도 미숙한듯
 
+# real answer
+#########
+
 import itertools
 def solution(relation):
     answer = 0
-
-    dic = {}
-    result_comlumn_temp = []
-
-    #컬럼 갯수
+    # 컬럼 갯수
     count_column = [x for x in range(len(relation[0]))]
 
-    print(count_column)
+    # print(count_column)
 
-    #숫자로 combination 작성 -> 모든 행의 조합은 필요없다 (-1 추가)
+    # 숫자로 combination 작성
     com_list = []
-    for i in range(len(count_column) - 1):
-        com_list += list(itertools.combinations(count_column, i+1))
-    print(com_list)
+    for i in range(len(count_column)):
+        com_list += list(itertools.combinations(count_column, i + 1))
+
+    # print(com_list)
 
     result_list = []
+
+    # 유일성
     for i in com_list:
         key_candidate = True
         temp_list = []
         str_temp = ''
+        # relation 체크
         for check in relation:
+            # 조합에 해당하는 string 체크
             for j in i:
                 str_temp += check[j] + '/'
             if str_temp in temp_list:
@@ -73,35 +77,150 @@ def solution(relation):
                 break
             temp_list.append(str_temp)
             str_temp = ''
+
+        # 후보키인 경우는 결과 리스트에 담아준다.
         if key_candidate:
-            str_result = ''.join([str(s) for s in i])
-            print(str_result)
-            if len(result_list) == 0:
-                result_list.append(str_result)
-            temp_check = False
-            for i in result_list:
-                if i in str_result:
-                    temp_check = True
-                    break
-                if not temp_check:
-                    result_list.append(str_result)
+            str_result = set([s for s in i])
 
-            # if any(result_list, str_result):
-            #     print("test")
-            # print(temp_list)
-    print(result_list)
+            result_list.append(str_result)
+            # print(str_result)
+            # if len(result_list) == 0:
+            #     result_list.append(str_result)
+            # temp_check = False
+            # for j in result_list:
+            #     for k in j:
+            #         # print('k -' ,k)
+            #         if k in str_result:
+            #             temp_check = True
+            #             break
+            # if not temp_check:
+            #     result_list.append(str_result)
 
-    # real_list = []
-    # for i in result_list:
-    #     change_str = '/'.join([str(k) for k in i])
-    #     print(change_str)
-    #     if len(real_list) == 0:
-    #         real_list.append(change_str)
+    # 최소성
+    # for i in result_list[::-1]:
+
+    for c in range(len(result_list[::-1])):  # 최소성 확인
+        check = True
+        for i in range(c):  # 어떤 하나라도 부분집합이 있으면, 정답 check false
+            if result_list[i].issubset(result_list[c]):
+                check = False
+                break
+        if check:
+            answer += 1
+
+    # print(answer)
+
+    # result_list.reverse()
     #
-    # print(real_list)
+    # remove_list = []
+    # for i in range(len(result_list)):
+    #     for j in range(i+1, len(result_list)):
+    #         print(result_list[j], result_list[i])
+    #         temp_check = False
+    #         for check in result_list[j]:
+    #             if check
+    #         # if result_list[j] in result_list[i]:
+    #         #     remove_list.append(result_list[i])
+    #         #     break
+    # print(len(remove_list))
+
+    # print(result_list)
+    return answer
+
+
+#####################################################################################################################################
+
+
+
+
+
+
+import itertools
+def solution(relation):
+    answer = 0
+    #컬럼 갯수
+    count_column = [x for x in range(len(relation[0]))]
+
+    # print(count_column)
+
+    #숫자로 combination 작성
+    com_list = []
+    for i in range(len(count_column)):
+        com_list += list(itertools.combinations(count_column, i+1))
+        
+    # print(com_list)
+
+    result_list = []
+    
+    # 유일성
+    for i in com_list:
+        key_candidate = True
+        temp_list = []
+        str_temp = ''
+        # relation 체크
+        for check in relation:
+            # 조합에 해당하는 string 체크
+            for j in i:
+                str_temp += check[j] + '/'
+            # print(str_temp)
+            if str_temp in temp_list:
+                key_candidate = False
+                break
+            temp_list.append(str_temp)
+            str_temp = ''
+
+    # 후보키인 경우는 결과 리스트에 담아준다.
+        if key_candidate:
+            str_result = set([s for s in i])
+
+            result_list.append(str_result)
+            # print(str_result)
+            # if len(result_list) == 0:
+            #     result_list.append(str_result)
+            # temp_check = False
+            # for j in result_list:
+            #     for k in j:
+            #         # print('k -' ,k)
+            #         if k in str_result:
+            #             temp_check = True
+            #             break
+            # if not temp_check:
+            #     result_list.append(str_result)
+
+    #최소성
+    # for i in result_list[::-1]:
+
+    for c in range(len(result_list[::-1])):  # 최소성 확인
+        check = True
+        for i in range(c):  # 어떤 하나라도 부분집합이 있으면, 정답 check false
+            if result_list[i].issubset(result_list[c]):
+                check = False
+                break
+        if check:
+            answer += 1
+
+    # print(answer)
+
+    # result_list.reverse()
+    #
+    # remove_list = []
+    # for i in range(len(result_list)):
+    #     for j in range(i+1, len(result_list)):
+    #         print(result_list[j], result_list[i])
+    #         temp_check = False
+    #         for check in result_list[j]:
+    #             if check
+    #         # if result_list[j] in result_list[i]:
+    #         #     remove_list.append(result_list[i])
+    #         #     break
+    # print(len(remove_list))
+
+    # print(result_list)
     return answer
 
 print(solution([["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]))
+print(solution( [['a', 'aa'], ['aa', 'a'], ['a', 'a']] ))
+
 
 from itertools import combinations
 
@@ -162,3 +281,25 @@ def solution(relation):
 
 # print(solution([["100","ryan","music","2"],["200","apeach","math","2"],["300","tube","computer","3"],["400","con","computer","4"],["500","muzi","music","3"],["600","apeach","music","2"]]))
 
+
+########### 타 풀이 -> 비트연산자
+# def solution(relation):
+#     answer_list = list()
+#     for i in range(1, 1 << len(relation[0])):
+#         tmp_set = set()
+#         for j in range(len(relation)):
+#             tmp = ''
+#             for k in range(len(relation[0])):
+#                 if i & (1 << k):
+#                     tmp += str(relation[j][k])
+#             tmp_set.add(tmp)
+#
+#         if len(tmp_set) == len(relation):
+#             not_duplicate = True
+#             for num in answer_list:
+#                 if (num & i) == num:
+#                     not_duplicate = False
+#                     break
+#             if not_duplicate:
+#                 answer_list.append(i)
+#     return len(answer_list)
