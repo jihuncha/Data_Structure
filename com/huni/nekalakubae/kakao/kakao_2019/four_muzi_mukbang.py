@@ -120,5 +120,5 @@ def check_zero(index:int, input_list:list):
     # print("right - ", right_index)
     return right_index - left_index
 
-print(solution([5],	5))
+print(solution([3,1,2],	5))
 
