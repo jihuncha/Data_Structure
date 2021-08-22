@@ -51,7 +51,74 @@
 # 4~5초 동안 (2번 음식은 다 먹었으므로) 3번 음식을 섭취한다. 남은 시간은 [1,0,0] 이다.
 # 5초에서 네트워크 장애가 발생했다. 1번 음식을 섭취해야 할 때 중단되었으므로, 장애 복구 후에 1번 음식부터 다시 먹기 시작하면 된다.
 
+import bisect
 def solution(food_times, k):
-    answer = 0
-    return answer
+    step_count = 0
+
+    # print(sum(food_times))
+    if k > sum(food_times):
+        return -1
+
+    while k != 0:
+        if len(set(food_times)) == 1 and list(set(food_times))[0] == 0:
+            return -1
+
+        if food_times[step_count] == 0:
+            if step_count >= len(food_times) - 1:
+                step_count = 0
+            else:
+                temp = check_zero(step_count, food_times)
+                step_count += temp + 1
+                if step_count > len(food_times) - 1:
+                    step_count = 0
+            continue
+
+        food_times[step_count] -= 1
+        if step_count >= len(food_times) - 1:
+            step_count = 0
+        else:
+            step_count += 1
+        k -= 1
+
+    return step_count + 1
+
+
+    # while k != 0:
+    #     if len(set(food_times)) == 1 and list(set(food_times))[0] == 0:
+    #         return -1
+    #
+    #     if food_times[step_count] == 0:
+    #         if step_count == len(food_times) - 1:
+    #             step_count = 0
+    #         else:
+    #             step_count += 1
+    #         continue
+    #
+    #     food_times[step_count] -= 1
+    #     if step_count == len(food_times) - 1:
+    #         step_count = 0
+    #     else:
+    #         step_count += 1
+    #     # print(step_count)
+    #     k -= 1
+    #
+    # # print(step_count)
+    # # print(food_times)
+    # if food_times[step_count] == 0:
+    #     if step_count > len(food_times) - 1:
+    #         step_count = bisect.bisect_left(food_times[:step_count],lambda x:x !=0)
+    #     else:
+    #         step_count = bisect.bisect_left(food_times[step_count+1:],lambda x:x !=0)
+    # # print(step_count)
+    # return step_count + 1
+
+def check_zero(index:int, input_list:list):
+    # print(index)
+    left_index = bisect.bisect_left(input_list[index + 1:], 0)
+    right_index = bisect.bisect_right(input_list[index + 1:], 0)
+    # print("left - ", left_index)
+    # print("right - ", right_index)
+    return right_index - left_index
+
+print(solution([5],	5))
 
