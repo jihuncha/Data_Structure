@@ -150,6 +150,8 @@ def solution(food_times, k):
     while heap_list:
         # 먹는데 걸리는 시간: (남은 양) * (남은 음식 개수)
         t = (heap_list[0][0] - previous) * food_num
+        print("t -", t)
+        print("k - ", k)
 
         if k >= t:
             k -= t
@@ -159,10 +161,13 @@ def solution(food_times, k):
 
         else:
             idx = k % food_num
+            print(idx)
             heap_list.sort(key=lambda x : x[1])
             answer = heap_list[idx][1]
             break
     return answer
 
 
-print(solution([3,1,2],	5))
+print(solution([3,1,2,2,3],	10))
+
+
