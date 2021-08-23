@@ -51,6 +51,13 @@
 # 4~5초 동안 (2번 음식은 다 먹었으므로) 3번 음식을 섭취한다. 남은 시간은 [1,0,0] 이다.
 # 5초에서 네트워크 장애가 발생했다. 1번 음식을 섭취해야 할 때 중단되었으므로, 장애 복구 후에 1번 음식부터 다시 먹기 시작하면 된다.
 
+
+# 풀이는 이분탐색 / 우선순위 큐 사용...
+# 이분 탐색 : https://onejunu.tistory.com/73
+# 우선순위 큐 : https://jeongchul.tistory.com/655
+
+
+
 import bisect
 def solution(food_times, k):
     step_count = 0
@@ -120,5 +127,42 @@ def check_zero(index:int, input_list:list):
     # print("right - ", right_index)
     return right_index - left_index
 
-print(solution([3,1,2],	5))
+# print(solution([3,1,2],	5))
 
+# https://mjmjmj98.tistory.com/149
+
+import heapq
+def solution(food_times, k):
+    answer = -1
+
+    if k > sum(food_times):
+        return -1
+
+    heap_list = []
+    for idx, data in enumerate(food_times):
+        heapq.heappush(heap_list, (data, idx + 1))
+
+    print(heap_list)
+
+    food_num = len(food_times)  # 남은 음식 개수
+    previous = 0 # 이전에 제거한 음식의 food_time
+
+    while heap_list:
+        # 먹는데 걸리는 시간: (남은 양) * (남은 음식 개수)
+        t = (heap_list[0][0] - previous) * food_num
+
+        if k >= t:
+            k -= t
+            previous, _ = heapq.heappop(heap_list)
+            food_num -= 1
+        # 시간이 부족할 경우(음식을 다 못먹을 경우) 남은 음식 중에 먹어야 할 음식 찾
+
+        else:
+            idx = k % food_num
+            heap_list.sort(key=lambda x : x[1])
+            answer = heap_list[idx][1]
+            break
+    return answer
+
+
+print(solution([3,1,2],	5))
