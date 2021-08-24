@@ -77,7 +77,7 @@ print(factorial_iterative(5))   #120
 print(factorial_recursive(5))   #120
 ~~~
 
-# 최소 공배수(LCM) / 최대 공약수(GCM)
+# 최소 공배수(LCM) / 최대 공약수(GCD)
     * 최소 공배수는 x와 y의 배수 중에서 최소 = x와 y의 곱에서 x,y의 최대 공약수를 나누어준 것과 같다
     * 최대 공약수는 x와 y에서 x의 약수이면서 y의 약수 중에 최대값
 
