@@ -44,3 +44,17 @@
 #
 # 2
 # 3
+
+import sys
+n,m,k,start = list(map(int, sys.stdin.readline().split()))
+
+print(n,m,k,start)
+
+# graph = [[] for _ in range(n)]
+
+
+for i in range(m):
+    a,b = list(map(int, sys.stdin.readline().split()))
+    # graph[a].append(b)
+
+print(graph)
