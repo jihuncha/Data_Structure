@@ -141,7 +141,9 @@
      | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_2.py) | | 
      | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_3.py) | | 
      | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_4.py) | |
-      
+     | 7 | [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) | 미해결 | [미해결/dfs_bfs_3](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_3.py) | |
+     | 8 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | 미해결 | [미해결/dfs_bfs_4](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_4.py) | |
+
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
@@ -185,7 +187,17 @@
      | 2 | [뱀](https://www.acmicpc.net/problem/3190) | 해결 | [해결/implement_2](com/huni/coding_site_problem/backjoon/implement/implement_2.py)| |
   
   3. DFS_BFS
-  
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_1.py) | |
+     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_2.py) | | 
+     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_1.py) | | 
+     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_2.py) | | 
+     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_3.py) | | 
+     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_4.py) | |
+     | 7 | [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) | 미해결 | [미해결/dfs_bfs_3](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_3.py) | |
+     | 8 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | 미해결 | [미해결/dfs_bfs_4](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_4.py) | |
+
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
@@ -212,7 +224,7 @@
   8. Graph_Dongbins
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [행성 터널](https://www.acmicpc.net/problem/2887) | 이해결 | [미해결/back_2887](com/huni/coding_site_problem/backjoon/graph_dongbins/back_2887.py) | 어려웡 |
+     | 1 | [행성 터널](https://www.acmicpc.net/problem/2887) | 미해결 | [미해결/back_2887](com/huni/coding_site_problem/backjoon/graph_dongbins/back_2887.py) | 어려웡 |
     
 <hr>
 
@@ -224,7 +236,7 @@
    
    | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
    | --- | --- | --- | --- | --- |
-   | 1 | [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410) | 해결 | [해결 완료/2021_kakao_1](com/huni/nekalakubae/kakao/kakao_2021/first_new_id_recommend.py) | | 
+   | 1 | [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410) | 해결 | [해결/2021_kakao_1](com/huni/nekalakubae/kakao/kakao_2021/first_new_id_recommend.py) | | 
    | 2 | [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2021_kakao_2](com/huni/nekalakubae/kakao/kakao_2021/second_menu_renewal.py) | |
    | 3 | [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) | 미해결 | [미해결/2021_kakao_3](com/huni/nekalakubae/kakao/kakao_2021/third_rank_search.py) | |
    | 4 | [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413) | 미해결 | [미해결/2021_kakao_4](com/huni/nekalakubae/kakao/kakao_2021/fourth_taxi.py) | |
@@ -236,7 +248,7 @@
    
    | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
    | --- | --- | --- | --- | --- |
-   | 1 | [오픈 채팅방](https://www.welcomekakao.com/learn/courses/30/lessons/42888) | 해결 | [해결 완료/2019_kakao_1](com/huni/nekalakubae/kakao/kakao_2019/one_open_chat_room.py) | | 
+   | 1 | [오픈 채팅방](https://www.welcomekakao.com/learn/courses/30/lessons/42888) | 해결 | [해결/2019_kakao_1](com/huni/nekalakubae/kakao/kakao_2019/one_open_chat_room.py) | | 
    | 2 | [실패율](https://programmers.co.kr/learn/courses/30/lessons/72411) | 해결 | [해결/2019_kakao_2](com/huni/nekalakubae/kakao/kakao_2019/two_fail_check.py) | |
    | 3 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | 미해결 | [미해결/2021_kakao_3](com/huni/nekalakubae/kakao/kakao_2019/three_candidate_key.py) | |
    | 4 | [무지의 먹방 라이브](https://programmers.co.kr/learn/courses/30/lessons/42891) | 미해결 | [미해결/2021_kakao_4](com/huni/nekalakubae/kakao/kakao_2019/four_muzi_mukbang.py) | |
