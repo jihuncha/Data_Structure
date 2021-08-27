@@ -189,14 +189,14 @@
   3. DFS_BFS
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) | 해결 | [해결/stack_queue_1](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_1.py) | |
-     | 2 | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) | 미해결 | [미해결/stack_queue_2](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_2.py) | | 
-     | 3 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 해결 | [해결/dfs_bfs_1](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_1.py) | | 
-     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 해결 | [해결/dfs_bfs_2](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_2.py) | | 
-     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 해결 | [해결/stack_queue_3](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_3.py) | | 
-     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/stack_queue_4](com/huni/coding_site_problem/programmers/dfs_bfs/stack_queue_4.py) | |
-     | 7 | [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) | 미해결 | [미해결/dfs_bfs_3](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_3.py) | |
-     | 8 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | 미해결 | [미해결/dfs_bfs_4](com/huni/coding_site_problem/programmers/dfs_bfs/dfs_bfs_4.py) | |
+     | 1 | [특정 거리의 도시 찾기](https://www.acmicpc.net/problem/18352) | 해결 | [해결/back_dfs_bfs_1](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_1.py) | |
+     | 2 | [연구소](https://www.acmicpc.net/problem/14502) | 미해결 | [미해결/back_dfs_bfs_2](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_2.py) | | 
+     | 3 | [경쟁적 전염](https://www.acmicpc.net/problem/18405) | 미해결 | [미해결/back_dfs_bfs_3](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_3.py) | | 
+     | 4 | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) | 미해결 | [미해결/back_dfs_bfs_4](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_4.py) | | 
+     | 5 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | 미해결 | [해결/back_dfs_bfs_5](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_5.py) | | 
+     | 6 | [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) | 미해결 | [미해결/back_dfs_bfs_6](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_6.py) | |
+     | 7 | [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) | 미해결 | [미해결/back_dfs_bfs_7](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_7.py) | |
+     | 8 | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | 미해결 | [미해결/back_dfs_bfs_8](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_8.py) | |
 
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
