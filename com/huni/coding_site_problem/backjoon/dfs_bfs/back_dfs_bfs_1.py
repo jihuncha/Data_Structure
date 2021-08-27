@@ -46,15 +46,44 @@
 # 3
 
 import sys
+from collections import deque
+
 n,m,k,start = list(map(int, sys.stdin.readline().split()))
 
-print(n,m,k,start)
-
-# graph = [[] for _ in range(n)]
-
+# graph = [[0] * (n+1) for _ in range(n + 1)]
+graph = [[] for _ in range(n+1)]
 
 for i in range(m):
     a,b = list(map(int, sys.stdin.readline().split()))
-    # graph[a].append(b)
+    # graph[a][b] = 1
+    graph[a].append(b)
+# print(graph)
 
-print(graph)
+result = [-1] * (n+1)
+result[start] = 0
+# print(result)
+
+# visited = [False] * (n+1)
+
+queue = deque()
+queue.append(start)
+
+while queue:
+    temp = queue.popleft()
+    for i in graph[temp]:
+        if result[i] == -1:
+            result[i] = result[temp] + 1
+            queue.append(i)
+        # if not visited[i]:
+        #     stack.append(i)
+        #     visited[i] = True
+        #     result[i] = result[temp] + 1
+# print(result)
+check = False
+for idx, data in enumerate(result):
+    if data == k:
+        check = True
+        print(idx)
+
+if not check:
+    print(-1)
