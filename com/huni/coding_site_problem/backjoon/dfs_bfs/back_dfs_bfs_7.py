@@ -27,6 +27,24 @@
 # 출력
 # 인구 이동이 며칠 동안 발생하는지 첫째 줄에 출력한다.
 
+# 2 20 50
+# 50 30
+# 20 40
+
+# 1
+
+# 2 40 50
+# 50 30
+# 20 40
+
+# 0
+
+# 2 20 50
+# 50 30
+# 30 40
+
+# 1
+
 # 3 5 10
 # 10 15 20
 # 20 30 25
@@ -39,6 +57,108 @@
 # 80 100 60 70
 # 70 20 30 40
 # 50 20 100 10
-
+#
 # 3
 
+n,l,r = map(int, input().split())
+
+data = []
+for i in range(n):
+    data.append(list(map(int, input().split())))
+
+# print(data)
+
+check_connect = [[0] * n for _ in range(n)]
+# print(check_connect)
+
+dx = [1,0,-1,0]
+dy = [0,1,0,-1]
+
+def connecting():
+    for a in range(n):
+        for b in range(n):
+            for i in range(4):
+                nx = a + dx[i]
+                ny = b + dy[i]
+                if nx < 0 or ny < 0 or nx > n - 1 or ny > n - 1:
+                    continue
+                num = abs(data[nx][ny] - data[a][b])
+                if num >= l and num <= r:
+                    if check_connect[a][b] == 0:
+                        check_connect[a][b] = int(str(a + 1) + str(b + 1))
+                    check_connect[nx][ny] = check_connect[a][b]
+
+def make_new_list():
+    sum = 0
+    count = 0
+    for i in range(n):
+        for j in range(n):
+            if check_connect[i][j] != 0:
+                sum += data[i][j]
+                count += 1
+    print(sum//count)
+
+    result_num = sum//count
+
+    for i in range(n):
+        for j in range(n):
+            if check_connect[i][j] != 0:
+                data[i][j] = result_num
+
+def check_end() -> bool:
+    for i in range(n):
+        for j in range(n):
+            if check_connect[i][j] != 0:
+                return False
+    return True
+
+result = 0
+
+while True:
+    # 연결 처리
+    connecting()
+    print(check_connect)
+
+    # 더 되는 경우 없는 경우는 빠져 나간다
+    if check_end():
+        break
+    # 새 데이터 list를 만든다
+    make_new_list()
+
+    # 초기화
+    check_connect = [[0] * n for _ in range(n)]
+    # 결과값 추가
+    result += 1
+
+
+# connecting()
+# print(check_connect)
+# print(make_new_list())
+
+print(result)
+
+# check_roof = False
+#
+# while check_roof:
+#     connecting()
+
+# def connect(temp:tuple):
+#     my_temp_num = int(str(temp[0] + 1) + str(temp[1] + 1))
+#     print(my_temp_num)
+#     # print(my_temp_num)
+#     check_connect[temp[0]][temp[1]] = my_temp_num
+#     for i in range(4):
+#         nx = temp[0] + dx[i]
+#         ny = temp[1] + dy[i]
+#         # print(nx,ny)
+#         if nx < 0 or ny < 0 or nx > n - 1 or ny > n - 1 \
+#                 or check_connect[nx][ny] != 0:
+#             continue
+#         num = abs(data[nx][ny] - data[temp[0]][temp[1]])
+#         if num >= l and num <= r:
+#             check_connect[nx][ny] = my_temp_num
+#             connect((nx,ny))
+
+
+# connect((0,0))
+# print(check_connect)
