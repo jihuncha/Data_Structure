@@ -39,3 +39,58 @@
 # "fr???"는 "frodo", "front", "frost", "frame"에 매치되므로 4입니다.
 # "fro???"는 "frozen"에 매치되므로 1입니다.
 # "pro?"는 매치되는 가사 단어가 없으므로 0 입니다.
+
+# aa~zz...이거 진짜 중요
+
+import bisect
+
+def count_by_range(input_list:list, left_value:str, right_value):
+    left_side = bisect.bisect_left(input_list, left_value)
+    right_side = bisect.bisect_right(input_list, right_value)
+    return right_side - left_side
+
+def solution(words, queries):
+    # words.sort()
+    # reverse_list = [x[::-1] for x in words]
+    # reverse_query = [x[::-1] for x in queries]
+    # print(reverse_list)
+    # print(count_by_range(words, "froaa", "frozz"))
+
+    my_list = [[] for _ in range(10001)]
+    reverse_list = [[] for _ in range(10001)]
+
+    # print(my_list)
+
+    for i in words:
+        my_list[len(i)].append(i)
+        reverse_list[len(i)].append(i[::-1])
+
+    for check in range(10001):
+        my_list[check].sort()
+        reverse_list[check].sort()
+
+    # for i in range(10001):
+
+
+
+    result = []
+
+    for i in range(len(queries)):
+        if queries[i].startswith("?"):
+            start_str = queries[i][::-1].replace('?', 'a')
+            end_str = queries[i][::-1].replace('?','z')
+            temp = count_by_range(reverse_list[len(queries[i])], start_str, end_str)
+            result.append(temp)
+        else:
+            start_str = queries[i].replace('?', 'a')
+            end_str = queries[i].replace('?','z')
+            temp = count_by_range(my_list[len(queries[i])], start_str, end_str)
+            result.append(temp)
+
+    return result
+
+
+
+
+
+print(solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["fro??", "????o", "fr???", "fro???", "pro?"]))
