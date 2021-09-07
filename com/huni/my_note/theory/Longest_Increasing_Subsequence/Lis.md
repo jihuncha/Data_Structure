@@ -92,6 +92,27 @@ print(lis(arr))
     * 상기 수형도에서 보듯이, 반복호출이 많다 -> 캐싱으로 중복 제거를 하자!!
     * 시간 복잡도 = O(n의 제곱)
 
+<hr>
+
+1. dynamic 예시 (O(N^2))
+10	20	10	30	20	50
+
+~~~python
+x = int(input())
+
+arr = list(map(int, input().split()))
+
+dp = [1 for i in range(x)]
+
+for i in range(x):
+    for j in range(i):
+        if arr[i] > arr[j]:
+            dp[i] = max(dp[i], dp[j]+1)
+
+print(max(dp))
+
+# 4
+~~~
 
 
 

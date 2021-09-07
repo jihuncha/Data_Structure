@@ -241,9 +241,11 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [금광](나동빈책) | 해결 | [해결/dp_sample_01](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_01.py) | |
-     | 2 | [정수삼각형](https://www.acmicpc.net/problem/1932) | 해결 | [해결/binary_search_3](com/huni/coding_site_problem/else/binary_search/binary_search_2.py) | |
-     | 3 | [공유기 설치](https://www.acmicpc.net/problem/2110) | 미해결 | [미해결/binary_search_3](com/huni/coding_site_problem/else/binary_search/binary_search_3.py) | |
-     | 4 | [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060) | 미해결 | [미해결/binary_search_4](com/huni/coding_site_problem/else/binary_search/binary_search_4.py) | |
+     | 2 | [정수삼각형](https://www.acmicpc.net/problem/1932) | 해결 | [해결/dp_sample_02](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_02.py) | |
+     | 3 | [퇴사](https://www.acmicpc.net/problem/14501) | 미해결 | [미해결/dp_sample_03](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_03.py) | |
+     | 4 | [병사 배치](https://www.acmicpc.net/problem/18353) | 해결 | [해결/dp_sample_04](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_04.py) | |
+     | 5 | [못생긴 수](나동빈책) | 미해결 | [미해결/dp_sample_05](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_05.py) | |
+     | 6 | [편집 거리](나동빈책) | 미해결 | [미해결/dp_sample_06](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_06.py) | |
 
 <hr>
 
