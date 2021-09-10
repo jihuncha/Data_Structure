@@ -252,10 +252,7 @@
      | --- | --- | --- | --- | --- |
      | 1 | [플로이드](https://www.acmicpc.net/problem/11404) | 해결 | [해결/shortest_path_1](com/huni/coding_site_problem/else/shortest_path/shortest_path_1.py) | |
      | 2 | [정확한 순위](나동빈책) | 미해결 | [미해결/shortest_path_2](com/huni/coding_site_problem/else/shortest_path/shortest_path_2.py) | |
-     | 3 | [퇴사](https://www.acmicpc.net/problem/14501) | 미해결 | [미해결/dp_sample_03](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_03.py) | |
-     | 4 | [병사 배치](https://www.acmicpc.net/problem/18353) | 해결 | [해결/dp_sample_04](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_04.py) | |
-     | 5 | [못생긴 수](나동빈책) | 미해결 | [미해결/dp_sample_05](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_05.py) | |
-     | 6 | [편집 거리](나동빈책) | 미해결 | [미해결/dp_sample_06](com/huni/coding_site_problem/else/dynamic_programming/dp_sample_06.py) | |
+     | 3 | [화성 탐사](나동빈책) | 미해결 | [미해결/shortest_path_3](com/huni/coding_site_problem/else/shortest_path/shortest_path_3.py) | |
 
 <hr>
 
