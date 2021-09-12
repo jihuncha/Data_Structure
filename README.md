@@ -284,3 +284,10 @@
    | 6 | [카드 짝 맞추기](https://programmers.co.kr/learn/courses/30/lessons/72415) | 미해결 | [미해결/2021_kakao_6](com/huni/coding_site_problem/programmers/greedy/greedy_3.py) | |
    | 7 | [매출 하락 최소화](https://programmers.co.kr/learn/courses/30/lessons/72416) | 미해결 | [미해결/2021_kakao_7](com/huni/coding_site_problem/programmers/greedy/greedy_4.py) | |
 
+<hr>
+
+[실제로 본 시험]
+
+1. KAKAO_2022
+    [2022신입공채](com/huni/my_test/2022_kakao_test)
+    
