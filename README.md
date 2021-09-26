@@ -214,7 +214,8 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [퇴사](https://www.acmicpc.net/problem/14501) | 미해결 | [해결/back_dynamic_1](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_1.py) | 재풀이 필요 |
-     | 2 | [병사 배치하기](https://www.acmicpc.net/problem/18353) | 미해결 | [미해결/binary_2](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_2.py) | | 
+     | 2 | [병사 배치하기](https://www.acmicpc.net/problem/18353) | 미해결 | [미해결/back_dynamic_2](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_2.py) | |
+     | 3 | [이친수](https://www.acmicpc.net/problem/2193) | 해결 | [해결/back_dynamic_3](com/huni/coding_site_problem/backjoon/dynamic_programming/back_dynamic_3.py) | | 
 
   7. Shortest_Path
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
