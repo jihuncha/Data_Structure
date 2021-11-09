@@ -1,4 +1,6 @@
 # 인접행렬
+import collections
+import copy
 
 INF = int(1e9)
 
@@ -50,3 +52,12 @@ def dfs(start:int):
 
 dfs(1)
 print(result)
+
+result = collections.deque()
+
+def bfs(start:int):
+    result.append(start)
+    visited[start] = True
+
+
+
