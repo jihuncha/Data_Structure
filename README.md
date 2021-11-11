@@ -55,6 +55,9 @@
 | --- | --- | ---- | - | --- |
 | 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)|
 | 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)|
+| 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)|
+
+
 
 <hr>
 
@@ -296,6 +299,3 @@
 
 1. KAKAO_2022
     [2022신입공채](com/huni/my_test/2022_kakao_test)
-    
-
-### 커밋 테스트
