@@ -53,9 +53,12 @@
 ### 21년 하반기 remind
 | 번호 | 제목 | 난이도 | 장 | 풀이 코드 |
 | --- | --- | ---- | - | --- |
-| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)|
-| 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)|
-| 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)|
+| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)| O |
+| 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)| O |
+| 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)| O |
+| 35 | [조합](https://leetcode.com/problems/combinations/) | ★★ | 12장. 그래프 | [combinations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinations.py)| O |
+
+
 
 
 
