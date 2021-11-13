@@ -51,8 +51,8 @@
 | 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/huni/algorithm_interview/chap14_tree/Maximum_Depth_of_Binary_Tree.py)|
 
 ### 21년 하반기 remind
-| 번호 | 제목 | 난이도 | 장 | 풀이 코드 |
-| --- | --- | ---- | - | --- |
+| 번호 | 제목 | 난이도 | 장 | 풀이 코드 | 정답/오답 |
+| --- | --- | ---- | - | --- | - |
 | 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)| O |
 | 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)| O |
 | 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)| O |
