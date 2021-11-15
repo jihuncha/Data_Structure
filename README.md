@@ -59,7 +59,12 @@
 | 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)| O |
 | 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)| O |
 | 35 | [조합](https://leetcode.com/problems/combinations/) | ★★ | 12장. 그래프 | [combinations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinations.py)| O |
-| 35 | [조합의 합](https://leetcode.com/problems/combination-sum/) | ★★ | 12장. 그래프 | [combinationSum.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinationSum.py)| O |
+| 36 | [조합의 합](https://leetcode.com/problems/combination-sum/) | ★★ | 12장. 그래프 | [combinationSum.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinationSum.py)| O |
+| 37 | [부분 집합](https://leetcode.com/problems/subsets/) | ★★ | 12장. 그래프 | [subsets.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/subsets.py)| O |
+| 38 | [조합의 합](https://leetcode.com/problems/combination-sum/) | ★★ | 12장. 그래프 | [combinationSum.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinationSum.py)| O |
+| 39 | [코스 스케줄](https://leetcode.com/problems/reconstruct-itinerary/) | ★★ | 12장. 그래프 | [reconstructItinerary.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/reconstructItinerary.py)| X |
+
+
 
 
 
