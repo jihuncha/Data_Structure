@@ -4,8 +4,8 @@
 #
 # A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
-# import null as null
-root = [3,9,20,null,null,15,7]
+# import null
+root = [3,9,20,None,None,15,7]
 # Output: 3
 
 # root = [1,null,2]
@@ -30,7 +30,7 @@ class TreeNode:
         self.right = right
         
 # tree 생성로직
-array =  [1,null,2]
+array =  [1,None,2]
 root = TreeNode(array[0])
 tree_array = [root]
 

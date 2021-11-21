@@ -62,16 +62,21 @@ class Solution:
                 return -1
 
             left = dfs(node.left, left_count + 1, right_count)
+
+            # -1
+            print(left_count, right_count)
+
             right = dfs(node.right, left_count, right_count + 1)
 
             print("left - ", left_count, " right - ", right_count)
+            print("left-z - ", left, " right_z - ", right)
 
             # print("count - ", left_count, " left - ", left, " right - ", right)
 
             # Longest 값
             self.longest_time = max(self.longest_time, left + right + 2)
 
-            print("test1")
+            print("test1", max(left,right) + 1)
             # 상태값
             return max(left, right) + 1
 
