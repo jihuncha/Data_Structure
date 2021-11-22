@@ -58,25 +58,29 @@ class Solution:
 
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         def dfs(node:TreeNode, left_count: int, right_count: int):
+            print(left_count, right_count)
             if not node:
                 return -1
 
             left = dfs(node.left, left_count + 1, right_count)
 
-            # -1
-            print(left_count, right_count)
+            # print(node.right, left_count, right_count)
 
             right = dfs(node.right, left_count, right_count + 1)
 
-            print("left - ", left_count, " right - ", right_count)
-            print("left-z - ", left, " right_z - ", right)
+            print("check node - ", node.val)
+
+            print("left_count - ", left_count, " right_count - ", right_count)
+            # print("left-z - ", left, " right_z - ", right)
 
             # print("count - ", left_count, " left - ", left, " right - ", right)
 
             # Longest 값
             self.longest_time = max(self.longest_time, left + right + 2)
 
-            print("test1", max(left,right) + 1)
+            temp = max(left,right) + 1
+
+            print("test1", temp)
             # 상태값
             return max(left, right) + 1
 
