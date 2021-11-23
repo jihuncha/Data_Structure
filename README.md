@@ -66,7 +66,10 @@
 | 40 | [네트워크 딜레이 타임](https://leetcode.com/problems/network-delay-time/) | ★★ | 13장. 최단경로문제 | [networkDelayTime.py](com/2021.11/reminder/algorithm_interview_remind/chap13_shortest_path/networkDelayTime.py)| O |
 | 41 | [K 경유지 내에 가장 저렴한 항공권](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | ★★ | 13장. 최단경로문제 | [cheapestFlightsWithinKStops.py](com/2021.11/reminder/algorithm_interview_remind/chap13_shortest_path/cheapestFlightsWithinKStops.py)| X |
 | 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/maximumDepthBinaryTree.py)| X |
-| 43 | [코스 스케줄](https://leetcode.com/problems/course-schedule/) | ★★ | 12장. 그래프 | [courseSchedule.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/courseSchedule.py)| X |
+| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
+| 44 | [가장 긴 동일 값의 경로](https://leetcode.com/problems/longest-univalue-path/) | ★ | 14장. 트리 | [longestUnivaluePath.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/longestUnivaluePath.py)| X |
+| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
+| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
 
 
 <hr>

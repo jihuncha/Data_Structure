@@ -8,12 +8,14 @@
 
 from typing import Optional
 
-root = [1,2,3,4,5]
+root = [1, 2, 3, 4, 5]
 
 # Output: 3
 # Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
 
-root = [1,2]
+root = [1, 2]
+
+
 # Output: 1
 
 # Constraints:
@@ -28,8 +30,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 # tree 생성로직
-array = [1,2,3,4,5]
+array = [1, 2, 3, 4, 5]
 root = TreeNode(array[0])
 tree_array = [root]
 
@@ -50,43 +53,33 @@ elif len(array) == 2:
         tree_array[0].left = left_node
         tree_array.append(left_node)
 
-
 from collections import deque
+
 
 class Solution:
     longest_time = 0
 
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        def dfs(node:TreeNode, left_count: int, right_count: int):
-            print(left_count, right_count)
+        def dfs(node: TreeNode):
+            # print(node.val, node.left.val, node.right.val)
+
             if not node:
+                # print("Test")
                 return -1
 
-            left = dfs(node.left, left_count + 1, right_count)
-
-            # print(node.right, left_count, right_count)
-
-            right = dfs(node.right, left_count, right_count + 1)
-
-            print("check node - ", node.val)
-
-            print("left_count - ", left_count, " right_count - ", right_count)
-            # print("left-z - ", left, " right_z - ", right)
-
-            # print("count - ", left_count, " left - ", left, " right - ", right)
+            left = dfs(node.left)
+            right = dfs(node.right)
 
             # Longest 값
             self.longest_time = max(self.longest_time, left + right + 2)
 
-            temp = max(left,right) + 1
-
-            print("test1", temp)
             # 상태값
             return max(left, right) + 1
 
-        dfs(root, 0, 0)
+        dfs(root)
 
         return self.longest_time
+
 
 print(Solution().diameterOfBinaryTree(root))
 
