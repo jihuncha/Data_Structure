@@ -1,27 +1,24 @@
-# https://leetcode.com/problems/longest-univalue-path/
+# https://leetcode.com/problems/invert-binary-tree/
 
-# Given the root of a binary tree, return the length of the longest path, where each node in the path has the same value.
-#
-# This path may or may not pass through the root.
-#
-# The length of the path between two nodes is represented by the number of edges between them.
+# Given the root of a binary tree, invert the tree, and return its root.
 from typing import Optional
 
-root = [5, 4, 5, 1, 1, 5]
+root = [4,2,7,1,3,6,9]
 
-# Output: 2
+# Output: [4,7,2,9,6,3,1]
 
-root = [1, 4, 5, 4, 4, 5]
+root = [2,1,3]
+# Output: [2,3,1]
 
+root = []
+# Output: []
 
-# Output: 2
-
-# Constraints:
+# Constraint
 #
-# The number of nodes in the tree is in the range [0, 104].
-# -1000 <= Node.val <= 1000
-# The depth of the tree will not exceed 1000.
-
+# s:
+#
+# The number of nodes in the tree is in the range [0, 100].
+# -100 <= Node.val <= 100
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -32,7 +29,7 @@ class TreeNode:
 
 
 # tree 생성로직
-array = [1, 4, 5, 4, 4, 5]
+array = [4,2,7,1,3,6,9]
 root = TreeNode(array[0])
 tree_array = [root]
 
@@ -55,32 +52,23 @@ elif len(array) == 2:
 
 
 class Solution:
-    result: int = 0
+    result_tree:TreeNode
 
-    def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
-        def dfs(node: TreeNode):
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+
+        def dfs(node:TreeNode):
             if not node:
                 return 0
 
             left = dfs(node.left)
+            # print(left)
             right = dfs(node.right)
 
-            if node.left and node.val == node.left.val:
-                left += 1
-            else:
-                left = 0
+            left, right = right, left
 
-            if node.right and node.val == node.right.val:
-                left += 1
-            else:
-                left = 0
-
-            self.result = max(self.result, left + right)
-
-            return max(left, right)
+            return max(left, right) + 1
 
         dfs(root)
-        return self.result
+        return root
 
-
-print(Solution().longestUnivaluePath(root))
+print(Solution().invertTree(root))

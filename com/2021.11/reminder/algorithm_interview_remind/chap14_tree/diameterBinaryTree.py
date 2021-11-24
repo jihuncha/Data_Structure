@@ -74,7 +74,7 @@ class Solution:
             self.longest_time = max(self.longest_time, left + right + 2)
 
             # 상태값
-            return max(left, right) + 1
+            return max(left, right)
 
         dfs(root)
 
