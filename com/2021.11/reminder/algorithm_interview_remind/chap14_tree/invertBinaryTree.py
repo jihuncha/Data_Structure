@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/invert-binary-tree/
 
 # Given the root of a binary tree, invert the tree, and return its root.
+import copy
 from typing import Optional
 
 root = [4,2,7,1,3,6,9]
@@ -51,24 +52,23 @@ elif len(array) == 2:
         tree_array.append(left_node)
 
 
+from collections import deque
 class Solution:
-    result_tree:TreeNode
-
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
 
-        def dfs(node:TreeNode):
-            if not node:
-                return 0
+        # bfs
+        my_list = deque([root])
 
-            left = dfs(node.left)
-            # print(left)
-            right = dfs(node.right)
+        while my_list:
+            # dfs 사용할거면 pop() 사용
+            temp = my_list.popleft()
+            if temp:
+                temp.left, temp.right = temp.right, temp.left
 
-            left, right = right, left
+                my_list.append(temp.left)
+                my_list.append(temp.right)
 
-            return max(left, right) + 1
-
-        dfs(root)
         return root
+
 
 print(Solution().invertTree(root))
