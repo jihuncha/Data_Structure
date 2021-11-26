@@ -75,6 +75,10 @@ elif len(array) == 2:
 from collections import deque
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        result_node = TreeNode()
+
+        result_node.val = root1.val + root2.val if root1 and root2 else root1.val if root1 else root2.val
+        print(result_node.val)
 
         root1_list = deque([root1])
         root2_list = deque([root2])
@@ -83,10 +87,14 @@ class Solution:
             temp_1 = root1_list.popleft()
             temp_2 = root2_list.popleft()
 
-            if temp_1.left and temp_2.left:
-                temp_1.left.val = temp_1.left.val + temp_2.left.val
-            root1_list.append(temp_1.left)
-            root2_list.append(temp_2.left)
+            if temp_1.left:
+                root1_list.append(temp_1.left)
+            if temp_2.left:
+                root2_list.append(temp_2.left)
+
+            result_left = TreeNode()
+            result_left.val = temp_1.val + temp_2.val if temp_1 and temp_2 else temp_1.val if temp_1 else temp_2.val
+            result_node.left = result_left
 
             if temp_1.right and temp_2.right:
                 temp_1.right.val = temp_1.right.val + temp_2.right.val
@@ -95,4 +103,25 @@ class Solution:
 
         return root1
 
+# print(Solution().mergeTrees(root1,root2))
+
+# 하..
+
+# 재귀 탐색으로 해결해야함
+
+class Solution:
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
+        if root1 and root2:
+            node = TreeNode(root1.val + root2.val)
+            node.left = self.mergeTrees(root1.left, root2.left)
+            node.right = self.mergeTrees(root1.right, root2.right)
+
+
+            return node
+        else:
+            return root1 or root2
+
 print(Solution().mergeTrees(root1,root2))
+
+
+

@@ -69,7 +69,9 @@
 | 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
 | 44 | [가장 긴 동일 값의 경로](https://leetcode.com/problems/longest-univalue-path/) | ★ | 14장. 트리 | [longestUnivaluePath.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/longestUnivaluePath.py)| X |
 | 45 | [이진 트리 반전](https://leetcode.com/problems/invert-binary-tree/) | ★ | 14장. 트리 | [invertBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/invertBinaryTree.py)| X |
-| 46 | [두 이진 트리 병합](https://leetcode.com/problems/merge-two-binary-trees/) | ★ | 14장. 트리 | [longestUnivaluePath.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/longestUnivaluePath.py)| X |
+| 46 | [두 이진 트리 병합](https://leetcode.com/problems/merge-two-binary-trees/) | ★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
+| 47 | [이진 트리 직렬화 & 역직렬화](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | ★★★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
+
 
 
 <hr>
@@ -200,7 +202,8 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/coding_site_problem/backjoon/greedy/greedy_back_1.py) | |
-    
+     | 2 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |    
+
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
