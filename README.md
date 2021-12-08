@@ -202,7 +202,7 @@
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
      | 1 | [로프](https://www.acmicpc.net/problem/2217) | 해결 | [해결/greedy_back_1](com/huni/coding_site_problem/backjoon/greedy/greedy_back_1.py) | |
-     | 2 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |    
+
 
   2. Implement
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
@@ -220,8 +220,7 @@
      | 5 | [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) | 미해결 | [해결/back_dfs_bfs_5](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_5.py) | | 
      | 6 | [감시 피하기](https://www.acmicpc.net/problem/18428) | 미해결 | [미해결/back_dfs_bfs_6](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_6.py) | |
      | 7 | [인구 이동](https://www.acmicpc.net/problem/16234) | 미해결 | [미해결/back_dfs_bfs_7](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_7.py) | |
-     | 8 | [블록 이동하기](https://programmers.co.kr/learn/courses/30/lessons/60063) | 미해결 | [미해결/back_dfs_bfs_8](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_8.py) | | 
-     | 9 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 해결 | [해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |
+     | 8 | [블록 이동하기](https://programmers.co.kr/learn/courses/30/lessons/60063) | 미해결 | [미해결/back_dfs_bfs_8](com/huni/coding_site_problem/backjoon/dfs_bfs/back_dfs_bfs_8.py) | |
   
   4. Sorting
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
@@ -252,6 +251,15 @@
      | --- | --- | --- | --- | --- |
      | 1 | [행성 터널](https://www.acmicpc.net/problem/2887) | 미해결 | [미해결/back_2887](com/huni/coding_site_problem/backjoon/graph_dongbins/back_2887.py) | 어려웡 |
     
+  9. Solved.ac problem
+     | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
+     | --- | --- | --- | --- | --- |
+     | 1 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |    
+     | 2 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 해결 | [해결/problem1012](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |
+     | 3 | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) | 미해결 | [해결/problem1011](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | |
+
+
+
 <hr>
 
 * 기타 문제들
