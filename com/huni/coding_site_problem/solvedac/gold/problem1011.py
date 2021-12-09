@@ -19,7 +19,7 @@
 
 # 입력
 # 입력의 첫 줄에는 테스트케이스의 개수 T가 주어진다.
-# 각각의 테스트 케이스에 대해 현재 위치 x 와 목표 위치 y 가 정수로 주어지며, x는 항상 y보다 작은 값을 갖는다. (0 ≤ x < y < 231)
+# 각각의 테스트 케이스에 대해 현재 위치 x 와 목표 위치 y 가 정수로 주어지며, x는 항상 y보다 작은 값을 갖는다. (0 ≤ x < y < 2의31승)
 #
 # 출력
 # 각 테스트 케이스에 대해 x지점으로부터 y지점까지 정확히 도달하는데 필요한 최소한의 공간이동 장치 작동 횟수를 출력한다.
@@ -41,7 +41,8 @@
 ### dfs로는 자꾸 메모리 초과남..
 
 import sys
-sys.setrecursionlimit(10**6)
+
+sys.setrecursionlimit(10 ** 6)
 
 input = sys.stdin.readline
 
@@ -57,7 +58,7 @@ for i in range(n):
     count = 1
 
     # current_position: 현재위치, before: 이전위치, count: 현재까지 step count
-    def dfs(current_position:int, before_position:int, count:int):
+    def dfs(current_position: int, before_position: int, count: int):
         # print(current_position,before,count)
 
         differ = current_position - before_position
@@ -77,18 +78,18 @@ for i in range(n):
         for i in move_type:
             if i <= 0:
                 continue
-            dfs(current_position + i, current_position, count+1)
+            dfs(current_position + i, current_position, count + 1)
 
 
-    dfs(position,before,count)
+    dfs(position, before, count)
 
     print(min(result) % 1000000009)
 
+# dfs로는 시간 초과 / 메모리 초과등으로 풀수가 없는 문제이다. - 2의 31승...
+# https://www.acmicpc.net/board/view/26059
 
-
-
-
-
-
+# 풀이 참고
+# https://eunhee-programming.tistory.com/99
+# https://ooyoung.tistory.com/91
 
 
