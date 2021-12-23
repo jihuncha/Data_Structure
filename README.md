@@ -254,10 +254,10 @@
   9. Solved.ac problem
      | 번호 | 제목 | 해결여부 | 내 풀이 | 풀이 코드 |
      | --- | --- | --- | --- | --- |
-     | 1 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |    
-     | 2 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 해결 | [해결/problem1012](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | |
-     | 3 | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) | 미해결 | [해결/problem1011](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | |
-
+     | 1 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | 실버 1 |    
+     | 2 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 해결 | [해결/problem1012](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | 실버 2 |
+     | 3 | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) | 미해결 | [해결/problem1011](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | 골드 5 |
+     | 4 | [Z](https://www.acmicpc.net/problem/1074) | 미해결 | [해결/problem1011](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | 골드 5 |
 
 
 <hr>
