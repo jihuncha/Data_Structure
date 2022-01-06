@@ -48,3 +48,26 @@ n,l = map(int, input().split())
 
 # print(n,l)
 
+
+
+
+### 수학이 참 어렵군
+# https://sexycoder.tistory.com/97
+
+temp = -1
+for i in range(l, 101):
+    temp_sum = (i * (i-1)) // 2
+
+    if n - temp_sum < 0:
+        break
+
+    if temp_sum > 0 and (n-temp_sum) % i == 0:
+        temp = (n-temp_sum) // i
+        for j in range(temp, temp + i):
+            print(j, end=' ')
+        break
+
+if temp == -1:
+    print(temp)
+
+
