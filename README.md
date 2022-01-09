@@ -55,22 +55,22 @@
 ### 21년 하반기 remind
 | 번호 | 제목 | 난이도 | 장 | 풀이 코드 | 정답/오답 |
 | --- | --- | ---- | - | --- | - |
-| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)| O |
-| 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)| O |
-| 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/permutations.py)| O |
-| 35 | [조합](https://leetcode.com/problems/combinations/) | ★★ | 12장. 그래프 | [combinations.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinations.py)| O |
-| 36 | [조합의 합](https://leetcode.com/problems/combination-sum/) | ★★ | 12장. 그래프 | [combinationSum.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/combinationSum.py)| O |
-| 37 | [부분 집합](https://leetcode.com/problems/subsets/) | ★★ | 12장. 그래프 | [subsets.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/subsets.py)| O |
-| 38 | [일정 재구성](https://leetcode.com/problems/reconstruct-itinerary/) | ★★ | 12장. 그래프 | [reconstructItinerary.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/reconstructItinerary.py)| X |
-| 39 | [코스 스케줄](https://leetcode.com/problems/course-schedule/) | ★★ | 12장. 그래프 | [courseSchedule.py](com/2021.11/reminder/algorithm_interview_remind/chap12_graph/courseSchedule.py)| X |
-| 40 | [네트워크 딜레이 타임](https://leetcode.com/problems/network-delay-time/) | ★★ | 13장. 최단경로문제 | [networkDelayTime.py](com/2021.11/reminder/algorithm_interview_remind/chap13_shortest_path/networkDelayTime.py)| O |
-| 41 | [K 경유지 내에 가장 저렴한 항공권](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | ★★ | 13장. 최단경로문제 | [cheapestFlightsWithinKStops.py](com/2021.11/reminder/algorithm_interview_remind/chap13_shortest_path/cheapestFlightsWithinKStops.py)| X |
-| 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/maximumDepthBinaryTree.py)| X |
-| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
-| 44 | [가장 긴 동일 값의 경로](https://leetcode.com/problems/longest-univalue-path/) | ★ | 14장. 트리 | [longestUnivaluePath.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/longestUnivaluePath.py)| X |
-| 45 | [이진 트리 반전](https://leetcode.com/problems/invert-binary-tree/) | ★ | 14장. 트리 | [invertBinaryTree.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/invertBinaryTree.py)| X |
-| 46 | [두 이진 트리 병합](https://leetcode.com/problems/merge-two-binary-trees/) | ★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
-| 47 | [이진 트리 직렬화 & 역직렬화](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | ★★★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/2021.11/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
+| 32 | [섬의 개수](https://leetcode.com/problems/number-of-islands/) | ★★ | 12장. 그래프 | [numbersOfIsland.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/numbersOfIsland.py)| O |
+| 33 | [전화번호 문자 조합](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | ★★ | 12장. 그래프 | [letterCombinationsPhoneNumber.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/letterCombinationsPhoneNumber.py)| O |
+| 34 | [순열](https://leetcode.com/problems/permutations/) | ★★ | 12장. 그래프 | [permutations.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/permutations.py)| O |
+| 35 | [조합](https://leetcode.com/problems/combinations/) | ★★ | 12장. 그래프 | [combinations.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/combinations.py)| O |
+| 36 | [조합의 합](https://leetcode.com/problems/combination-sum/) | ★★ | 12장. 그래프 | [combinationSum.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/combinationSum.py)| O |
+| 37 | [부분 집합](https://leetcode.com/problems/subsets/) | ★★ | 12장. 그래프 | [subsets.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/subsets.py)| O |
+| 38 | [일정 재구성](https://leetcode.com/problems/reconstruct-itinerary/) | ★★ | 12장. 그래프 | [reconstructItinerary.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/reconstructItinerary.py)| X |
+| 39 | [코스 스케줄](https://leetcode.com/problems/course-schedule/) | ★★ | 12장. 그래프 | [courseSchedule.py](com/codingTest/reminder/algorithm_interview_remind/chap12_graph/courseSchedule.py)| X |
+| 40 | [네트워크 딜레이 타임](https://leetcode.com/problems/network-delay-time/) | ★★ | 13장. 최단경로문제 | [networkDelayTime.py](com/codingTest/reminder/algorithm_interview_remind/chap13_shortest_path/networkDelayTime.py)| O |
+| 41 | [K 경유지 내에 가장 저렴한 항공권](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | ★★ | 13장. 최단경로문제 | [cheapestFlightsWithinKStops.py](com/codingTest/reminder/algorithm_interview_remind/chap13_shortest_path/cheapestFlightsWithinKStops.py)| X |
+| 42 | [이진 트리의 최대 깊이](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | ★ | 14장. 트리 | [Maximum Depth of Binary Tree.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/maximumDepthBinaryTree.py)| X |
+| 43 | [이진 트리의 직경](https://leetcode.com/problems/diameter-of-binary-tree/) | ★ | 14장. 트리 | [diameterBinaryTree.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/diameterBinaryTree.py)| X |
+| 44 | [가장 긴 동일 값의 경로](https://leetcode.com/problems/longest-univalue-path/) | ★ | 14장. 트리 | [longestUnivaluePath.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/longestUnivaluePath.py)| X |
+| 45 | [이진 트리 반전](https://leetcode.com/problems/invert-binary-tree/) | ★ | 14장. 트리 | [invertBinaryTree.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/invertBinaryTree.py)| X |
+| 46 | [두 이진 트리 병합](https://leetcode.com/problems/merge-two-binary-trees/) | ★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
+| 47 | [이진 트리 직렬화 & 역직렬화](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | ★★★ | 14장. 트리 | [mergeTwoBinaryTrees.py](com/codingTest/reminder/algorithm_interview_remind/chap14_tree/mergeTwoBinaryTrees.py)| X |
 
 
 
