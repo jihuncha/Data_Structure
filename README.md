@@ -321,5 +321,16 @@
 
 [실제로 본 시험]
 
-1. KAKAO_2022
-    [2022신입공채](com/huni/my_test/2022_kakao_test)
+1. KAKAO_2022 - 탈
+- [2022신입공채](com/codingTest/2022_kakao_test)
+2. Line Fintech - 합
+- [라인핀테크](com/codingTest/line)
+3. Kakao Mobility - 탈
+- [카카오모빌리티](com/codingTest/mobility)
+4. 피플펀드 - 합
+- [피플펀드](com/codingTest/peoplefund)
+5. vuno
+- [vuno](com/codingTest/vuno)
+6. 
+7. 
+8. 
