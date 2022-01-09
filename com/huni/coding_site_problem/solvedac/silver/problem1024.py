@@ -46,7 +46,27 @@ input = sys.stdin.readline
 
 n,l = map(int, input().split())
 
-# print(n,l)
+result = -1
+for i in range(l, 101):
+    if i <= 0:
+        break
+
+    # n-1 까지의 합
+    check_sum =(i * (i - 1)) // 2
+
+    # 양수 체크
+    if n - check_sum < 0:
+        break
+
+    if check_sum > 0 and (n - check_sum) % i == 0:
+        result = (n - check_sum) // i
+        for j in range(result, result + i):
+            print(j, end=' ')
+        break
+
+if result == -1:
+    print(result)
+
 
 
 
@@ -54,20 +74,20 @@ n,l = map(int, input().split())
 ### 수학이 참 어렵군
 # https://sexycoder.tistory.com/97
 
-temp = -1
-for i in range(l, 101):
-    temp_sum = (i * (i-1)) // 2
-
-    if n - temp_sum < 0:
-        break
-
-    if temp_sum > 0 and (n-temp_sum) % i == 0:
-        temp = (n-temp_sum) // i
-        for j in range(temp, temp + i):
-            print(j, end=' ')
-        break
-
-if temp == -1:
-    print(temp)
+# temp = -1
+# for i in range(l, 101):
+#     temp_sum = (i * (i-1)) // 2
+#
+#     if n - temp_sum < 0:
+#         break
+#
+#     if temp_sum > 0 and (n-temp_sum) % i == 0:
+#         temp = (n-temp_sum) // i
+#         for j in range(temp, temp + i):
+#             print(j, end=' ')
+#         break
+#
+# if temp == -1:
+#     print(temp)
 
 

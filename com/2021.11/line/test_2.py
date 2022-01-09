@@ -86,6 +86,7 @@ def solution(arr):
         temp = checkIndex(index)
         # 같지 않은 경우는 count해준다
         if temp[0] != temp[1]:
+            print(temp[0], temp[1], index)
             answer += (temp[0] - index) * (temp[1] - temp[0])
             # index를 갱신하여 반복한다.
             index = temp[1]
