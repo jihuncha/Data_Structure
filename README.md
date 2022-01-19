@@ -257,9 +257,9 @@
      | 1 | [물병](https://www.acmicpc.net/problem/1052) | 미해결 | [미해결/problem1052](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | 실버 1 |    
      | 2 | [유기농 배추](https://www.acmicpc.net/problem/1012) | 해결 | [해결/problem1012](com/huni/coding_site_problem/solvedac/silver/problem1052.py) | 실버 2 |
      | 3 | [Fly me to the Alpha Centauri](https://www.acmicpc.net/problem/1011) | 미해결 | [해결/problem1011](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | 골드 5 |
-     | 4 | [Z](https://www.acmicpc.net/problem/1074) | 미해결 | [해결/problem1074](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | 골드 5 |
-     | 5 | [Z](https://www.acmicpc.net/problem/1024) | 해결(재풀이필요) | [해결/problem1024](com/huni/coding_site_problem/solvedac/silver/problem1024.py) | 실버 2 |
-
+     | 4 | [Z](https://www.acmicpc.net/problem/1074) | 미해결 | [미해결/problem1074](com/huni/coding_site_problem/solvedac/gold/problem1011.py) | 골드 5 |
+     | 5 | [수열의 합](https://www.acmicpc.net/problem/1024) | 해결(재풀이필요) | [해결/problem1024](com/huni/coding_site_problem/solvedac/silver/problem1024.py) | 실버 2 |
+     | 6 | [친구](https://www.acmicpc.net/problem/1058) | 미해결 | [미해결/problem1058](com/huni/coding_site_problem/solvedac/silver/problem1058.py) | 실버 2 |
 
 <hr>
 
