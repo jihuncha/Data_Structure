@@ -70,4 +70,29 @@
 # 6
 
 # 이게 누적합인가?
+# 이거 다시보니까 dfs같은데..????아닌가..
+import sys
+
+input = sys.stdin.readline
+
+count = int(input())
+
+print(count)
+
+data = []
+
+for _ in range(count):
+    temp_data = [0 if x == 'N' else 1 for x in list(map(str, input().split()))[0]]
+
+    data.append(temp_data)
+
+print(data)
+
+# def dfs(start:int, end:int, count:int):
+#
+#
+# for x in range(count):
+#     for y in range(count):
+
+
 
