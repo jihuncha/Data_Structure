@@ -320,4 +320,5 @@
 <hr>
 
 [실제로 본 시험]
-    * 참고 (com/codingTest)
+
+* 참고 (com/codingTest)
